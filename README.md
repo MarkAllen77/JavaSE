@@ -33,7 +33,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>Page.java</td>
+    <td>OpenPage.java</td>
     <td></td>
   </tr>
     <tr>

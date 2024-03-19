@@ -4,13 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
-import java.util.TimeZone;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -32,24 +30,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.time.StopWatch;
 import org.testng.Assert;
 
 import SourcePages.OpenPage;
 
 
 public class JavaSelenium {
-	/*
-	 * 1. create selenium object code
-	 * 2. use configuration file
-	 * 3. convert to page object model
-	 * 4. apply testng
-	 * 5. apply extent report
-	 * 6. add log files
-	 */
-	static WebDriver driver;
+	WebDriver driver;
 	
-	public static void InitializeDriver() {
+	public JavaSelenium(WebDriver driver) {		
+		this.driver = driver;
+	}
+	
+	public WebDriver InitializeDriver() {
 		try {
 			String projectPath = System.getProperty("user.dir");
 			System.out.println(projectPath);
@@ -69,10 +62,11 @@ public class JavaSelenium {
 		    driver = new ChromeDriver(options); 
 		} catch (IOException e) {
 			e.printStackTrace();
-		}		
+		}
+		return driver;
 	}
 	
-	public static void CloseAndQuitBrowser() {
+	public void CloseAndQuitBrowser(WebDriver driver) {
 		try {
 			Thread.sleep(3000);
 			driver.quit();
@@ -81,7 +75,7 @@ public class JavaSelenium {
 		}
 	}
 	
-	public static void HandleInputandRadio() {
+	public void HandleInputandRadio(WebDriver driver) {
 		System.out.println("-- HandleInputandRadio --");
 		
 		String url = "https://demoqa.com/automation-practice-form";
@@ -141,7 +135,7 @@ public class JavaSelenium {
 		    driver.findElement(By.xpath(box)).click();		
 	}
 	
-	public static void HandleDropdown() {
+	public void HandleDropdown(WebDriver driver) {
 		System.out.println("-- HandleDropdown --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -166,7 +160,7 @@ public class JavaSelenium {
 	    System.out.println(countryDropdown.getAttribute("value"));
 	}
 	
-	public static void HandleMultiDropdown() {
+	public void HandleMultiDropdown(WebDriver driver) {
 		System.out.println("-- HandleMultiDropdown --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -198,7 +192,7 @@ public class JavaSelenium {
 		}		
 	}
 	
-	public static void HandleBootstrapDropdown() {
+	public void HandleBootstrapDropdown(WebDriver driver) {
 		System.out.println("-- HandleBootstrapDropdown --");
 		
 	    String url = "https://www.jquery-az.com/boots/demo.php?ex=63.0_2";
@@ -226,7 +220,7 @@ public class JavaSelenium {
 	    }	    
 	}
 	
-	public static void HandleAutoSuggestion() {
+	public void HandleAutoSuggestion(WebDriver driver) {
 		System.out.println("-- HandleAutoSuggestion --");
 		
 		String url = "https://www.redbus.in/";
@@ -253,7 +247,7 @@ public class JavaSelenium {
 	    }
 	}
 
-	public static void HandleHiddenItems() {
+	public void HandleHiddenItems(WebDriver driver) {
 		System.out.println("-- HandleHiddenItems --");
 		
 	    String url = "https://opensource-demo.orangehrmlive.com/";
@@ -270,7 +264,7 @@ public class JavaSelenium {
 	    passwordinput.sendKeys("admin123");	
 	}
 
-	public static void HandleDialogAlerts() {
+	public void HandleDialogAlerts(WebDriver driver) {
 		System.out.println("-- HandleDialogAlerts --");
 		
 		try {
@@ -330,7 +324,7 @@ public class JavaSelenium {
 		}		
 	}
 	
-	public static void HandleFramesiFrames() {
+	public void HandleFramesiFrames(WebDriver driver) {
 		System.out.println("-- HandleFramesiFrames --");
 		
 	    String url = "https://ui.vision/demo/webtest/frames/";
@@ -374,7 +368,7 @@ public class JavaSelenium {
 	    frame3radio.click();	
 	}
 	
-	public static void HandleWebTablePagination() {
+	public void HandleWebTablePagination(WebDriver driver) {
 		System.out.println("-- HandleWebTablePagination --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -424,7 +418,7 @@ public class JavaSelenium {
 		}
 	}
 	
-	public static void HandleDatePickers() {
+	public void HandleDatePickers(WebDriver driver) {
 		System.out.println("-- HandleDatePickers --");
 		
 		try {
@@ -471,7 +465,7 @@ public class JavaSelenium {
 		}	
 	}
 	
-	public static void HandleMouseActions() {
+	public void HandleMouseActions(WebDriver driver) {
 		System.out.println("-- HandleMouseActions --");
 		
 		try {
@@ -525,7 +519,7 @@ public class JavaSelenium {
 		}
 	}
 	
-	public static void HandleKeyboardActions() {
+	public void HandleKeyboardActions(WebDriver driver) {
 		System.out.println("-- HandleKeyboardActions --");
 		
 	    String url = "https://gotranscript.com/text-compare/";
@@ -554,7 +548,7 @@ public class JavaSelenium {
 	    Threadsleep(2000);	
 	}
 	
-	public static void HandleUploadFiles() {
+	public void HandleUploadFiles(WebDriver driver) {
 		System.out.println("-- HandleUploadFiles --");
 		
 	    String url = "https://www.foundit.in/";
@@ -587,7 +581,7 @@ public class JavaSelenium {
 	    System.out.println("\"sample2.txt\" = " + filename2.getText());	
 	}
 	
-	public static void HandlePagesWindows() {
+	public void HandlePagesWindows(WebDriver driver) {
 		System.out.println("-- HandlePagesWindows --");
 		
 	    String url = "https://opensource-demo.orangehrmlive.com/";
@@ -623,7 +617,7 @@ public class JavaSelenium {
 	    Threadsleep(2000);	
 	}
 	
-	public static void HandleMultiplePagesWindows() {
+	public void HandleMultiplePagesWindows(WebDriver driver) {
 		System.out.println("-- HandleMultiplePagesWindows --");
 		
 		String url = "https://opensource-demo.orangehrmlive.com/";
@@ -683,7 +677,7 @@ public class JavaSelenium {
 	    driver.switchTo().window(originalwindow);	
 	}
 	
-	public static void HandleCaptureScreen() {
+	public void HandleCaptureScreen(WebDriver driver) {
 		System.out.println("-- HandleCaptureScreen --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -735,7 +729,7 @@ public class JavaSelenium {
 //		}
 }	
 	
-	public static void HandleUsingClass() {
+	public void HandleUsingClass(WebDriver driver) {
 		System.out.println("-- HandleUsingClass --");
 		
 		// class within same file
@@ -750,7 +744,7 @@ public class JavaSelenium {
 	    Threadsleep(2000);
 	}
 	
-	public static void Threadsleep(int inMilliSeconds) {
+	public void Threadsleep(int inMilliSeconds) {
 		try {
 			Thread.sleep(inMilliSeconds);
 		} catch (InterruptedException e) {
@@ -758,46 +752,46 @@ public class JavaSelenium {
 		}
 	}
 	
-	public static void SelectProduct(String productname) {
+	public void SelectProduct(String productname) {
 		WebElement matchedrow = driver.findElement(By.xpath("//td[text()='" + productname + "']//following-sibling::td//input"));
     	matchedrow.click();
 	}
 		
-	public static void main(String[] args) {
-		StopWatch watch = new StopWatch();
-		watch.start();
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
-		LocalDateTime now = LocalDateTime.now();  			
-		System.out.println("Start Execution: " + dtf.format(now));
-		
-	    InitializeDriver();
-	    
-	    HandleInputandRadio();
-	    HandleDropdown();
-	    HandleMultiDropdown();
-	    HandleBootstrapDropdown();
-	    HandleAutoSuggestion();
-	    HandleHiddenItems();
-	    HandleDialogAlerts();
-	    HandleFramesiFrames();
-	    HandleWebTablePagination();
-	    HandleDatePickers();
-	    HandleMouseActions();
-	    HandleKeyboardActions();
-	    HandleUploadFiles();
-	    HandlePagesWindows();
-	    HandleMultiplePagesWindows();
-	    HandleCaptureScreen();
-	    HandleUsingClass();
-	    
-	    CloseAndQuitBrowser();
-	    
-	    watch.stop();
-	    DateFormat df = new SimpleDateFormat("HH 'hours', mm 'mins', ss 'seconds', SSS 'ms'");
-		df.setTimeZone(TimeZone.getTimeZone("GMT+0"));
-		String elapsedTime = df.format(watch.getTime());			
-		System.out.println("Time Elapsed: " + elapsedTime);
-	}
+	//	public static void main(String[] args) {
+	//		StopWatch watch = new StopWatch();
+	//		watch.start();
+	//		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
+	//		LocalDateTime now = LocalDateTime.now();  			
+	//		System.out.println("Start Execution: " + dtf.format(now));
+	//		
+	//	    InitializeDriver();
+	//	    
+	//	    HandleInputandRadio();
+	//	    HandleDropdown();
+	//	    HandleMultiDropdown();
+	//	    HandleBootstrapDropdown();
+	//	    HandleAutoSuggestion();
+	//	    HandleHiddenItems();
+	//	    HandleDialogAlerts();
+	//	    HandleFramesiFrames();
+	//	    HandleWebTablePagination();
+	//	    HandleDatePickers();
+	//	    HandleMouseActions();
+	//	    HandleKeyboardActions();
+	//	    HandleUploadFiles();
+	//	    HandlePagesWindows();
+	//	    HandleMultiplePagesWindows();
+	//	    HandleCaptureScreen();
+	//	    HandleUsingClass();
+	//	    
+	//	    CloseAndQuitBrowser();
+	//	    
+	//	    watch.stop();
+	//	    DateFormat df = new SimpleDateFormat("HH 'hours', mm 'mins', ss 'seconds', SSS 'ms'");
+	//		df.setTimeZone(TimeZone.getTimeZone("GMT+0"));
+	//		String elapsedTime = df.format(watch.getTime());			
+	//		System.out.println("Time Elapsed: " + elapsedTime);
+	//	}
 }
 
 
