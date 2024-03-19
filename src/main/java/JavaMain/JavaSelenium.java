@@ -1,5 +1,8 @@
 package JavaMain;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -36,6 +39,7 @@ import SourcePages.OpenPage;
 
 
 public class JavaSelenium {
+	public static Logger logger = LogManager.getLogger();
 	WebDriver driver;
 	
 	public JavaSelenium(WebDriver driver) {		
@@ -45,7 +49,7 @@ public class JavaSelenium {
 	public WebDriver InitializeDriver() {
 		try {
 			String projectPath = System.getProperty("user.dir");
-			System.out.println(projectPath);
+			logger.info(projectPath);
 			
 			Properties prop = new Properties();
 			InputStream input;
@@ -76,7 +80,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleInputandRadio(WebDriver driver) {
-		System.out.println("-- HandleInputandRadio --");
+		logger.info("-- HandleInputandRadio --");
 		
 		String url = "https://demoqa.com/automation-practice-form";
 		driver.get(url);
@@ -85,26 +89,26 @@ public class JavaSelenium {
 		WebElement firstnameinput = driver.findElement(By.xpath("//input[@id='firstName']"));
 		WebElement lastnameinput = driver.findElement(By.xpath("//input[@id='lastName']"));
 		
-		System.out.println(firstnameinput.isDisplayed());
-		System.out.println(firstnameinput.isEnabled());
-		System.out.println("Current value: " + firstnameinput.getAttribute("value"));
+		logger.info(firstnameinput.isDisplayed());
+		logger.info(firstnameinput.isEnabled());
+		logger.info("Current value: " + firstnameinput.getAttribute("value"));
 		
 		firstnameinput.sendKeys("John");
 		lastnameinput.sendKeys("Doe");
 		
-		System.out.println("Updated value: " + firstnameinput.getAttribute("value"));
+		logger.info("Updated value: " + firstnameinput.getAttribute("value"));
 		
 		WebElement gendermalelabel = driver.findElement(By.xpath("//label[text() = 'Male']"));
 		WebElement genderfemalelabel = driver.findElement(By.xpath("//label[text() = 'Female']"));
 		WebElement gendermaleradiobutton = driver.findElement(By.xpath("//input[@id='gender-radio-1']"));
 		WebElement genderfemaleradiobutton = driver.findElement(By.xpath("//input[@id='gender-radio-2']"));
 		
-		System.out.println("Radiobutton " + gendermaleradiobutton.isSelected());
+		logger.info("Radiobutton " + gendermaleradiobutton.isSelected());
 		gendermalelabel.click();
-		System.out.println(gendermaleradiobutton.isSelected());
-		System.out.println(genderfemaleradiobutton.isSelected());
+		logger.info(gendermaleradiobutton.isSelected());
+		logger.info(genderfemaleradiobutton.isSelected());
 		genderfemalelabel.click();
-		System.out.println(genderfemaleradiobutton.isSelected());
+		logger.info(genderfemaleradiobutton.isSelected());
 		
 		// ----- How to handle Checkboxes -----
 		WebElement hobbiessportslabel = driver.findElement(By.xpath("//label[text() = 'Sports']"));
@@ -112,12 +116,12 @@ public class JavaSelenium {
 		WebElement hobbiesreadinglabel = driver.findElement(By.xpath("//label[text() = 'Reading']"));
 		WebElement hobbiesreadingcheckbox = driver.findElement(By.xpath("//input[@id='hobbies-checkbox-2']"));
 		
-		System.out.println("Checkbox " + hobbiessportscheckbox.isSelected());
+		logger.info("Checkbox " + hobbiessportscheckbox.isSelected());
 		hobbiessportslabel.click();
-		System.out.println(hobbiessportscheckbox.isSelected());
-		System.out.println(hobbiesreadingcheckbox.isSelected());
+		logger.info(hobbiessportscheckbox.isSelected());
+		logger.info(hobbiesreadingcheckbox.isSelected());
 		hobbiesreadinglabel.click();
-		System.out.println(hobbiesreadingcheckbox.isSelected());
+		logger.info(hobbiesreadingcheckbox.isSelected());
 		
 		try {
 			Thread.sleep(2000);
@@ -136,7 +140,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleDropdown(WebDriver driver) {
-		System.out.println("-- HandleDropdown --");
+		logger.info("-- HandleDropdown --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
 		driver.get(url);
@@ -152,16 +156,16 @@ public class JavaSelenium {
 	    WebElement countryOption = countryDropdown.findElement(By.xpath("//option[@value='india']"));
 	    countryOption.click();
 
-	    System.out.println(countryDropdown.getAttribute("value"));
+	    logger.info(countryDropdown.getAttribute("value"));
 
 	    Assert.assertEquals(countryDropdown.getAttribute("value"),"india");
 
 	    driver.findElement(By.cssSelector("#country > option:nth-child(6)")).click();
-	    System.out.println(countryDropdown.getAttribute("value"));
+	    logger.info(countryDropdown.getAttribute("value"));
 	}
 	
 	public void HandleMultiDropdown(WebDriver driver) {
-		System.out.println("-- HandleMultiDropdown --");
+		logger.info("-- HandleMultiDropdown --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
 		driver.get(url);
@@ -182,10 +186,10 @@ public class JavaSelenium {
 			Thread.sleep(1000);
 			colorsdropdownobject.selectByValue("white");
 			
-			System.out.println("Numer of options: " + colorsdropdownobject.getOptions().size());
+			logger.info("Numer of options: " + colorsdropdownobject.getOptions().size());
 			
 			for (WebElement colors : colorsdropdownobject.getAllSelectedOptions())
-			    System.out.println("Value: " + colors.getText());		
+			    logger.info("Value: " + colors.getText());		
 
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -193,7 +197,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleBootstrapDropdown(WebDriver driver) {
-		System.out.println("-- HandleBootstrapDropdown --");
+		logger.info("-- HandleBootstrapDropdown --");
 		
 	    String url = "https://www.jquery-az.com/boots/demo.php?ex=63.0_2";
 	    driver.get(url);
@@ -201,27 +205,27 @@ public class JavaSelenium {
 	    WebElement outputbutton = driver.findElement(By.xpath("//button"));
 	    List<WebElement> outputoption = driver.findElements(By.xpath("//ul//li//label//input"));
 
-	    System.out.println("Numer of options: " + outputoption.size());
+	    logger.info("Numer of options: " + outputoption.size());
 	    outputbutton.click();
 
 	    for (WebElement item : outputoption) {
 	        String value = item.getAttribute("value");
 	        if (value.equals("Angular") || value.equals("Java")) {
-	        		System.out.println(item.getAttribute("value"));
+	        		logger.info(item.getAttribute("value"));
 		            item.click();
-		            System.out.println(item.isSelected());	        		
+		            logger.info(item.isSelected());	        		
 	        }
 
 	        if (value.equals("HTML") || value.equals("CSS")) {
-	        		System.out.println(item.getAttribute("value"));
+	        		logger.info(item.getAttribute("value"));
 		            item.click();
-		            System.out.println(item.isSelected());	        			        		
+		            logger.info(item.isSelected());	        			        		
 	        }
 	    }	    
 	}
 	
 	public void HandleAutoSuggestion(WebDriver driver) {
-		System.out.println("-- HandleAutoSuggestion --");
+		logger.info("-- HandleAutoSuggestion --");
 		
 		String url = "https://www.redbus.in/";
 	    driver.get(url);
@@ -234,11 +238,11 @@ public class JavaSelenium {
 		
 	    List<WebElement> autodropdownoptions = driver.findElements(By.xpath("//li[contains(@class,'sc-iwsKbI')]/div/text[1]"));
 
-	    System.out.println(("Number of options:" + autodropdownoptions.size()));
+	    logger.info(("Number of options:" + autodropdownoptions.size()));
 
 	    for (WebElement option : autodropdownoptions) {
 	        String value = option.getText();
-	        System.out.println(value);
+	        logger.info(value);
 
 	        if (value.equals("RK Ashram")) {
 	            option.click();
@@ -248,7 +252,7 @@ public class JavaSelenium {
 	}
 
 	public void HandleHiddenItems(WebDriver driver) {
-		System.out.println("-- HandleHiddenItems --");
+		logger.info("-- HandleHiddenItems --");
 		
 	    String url = "https://opensource-demo.orangehrmlive.com/";
 	    driver.get(url);
@@ -265,7 +269,7 @@ public class JavaSelenium {
 	}
 
 	public void HandleDialogAlerts(WebDriver driver) {
-		System.out.println("-- HandleDialogAlerts --");
+		logger.info("-- HandleDialogAlerts --");
 		
 		try {
 		    String url = "https://testautomationpractice.blogspot.com/";
@@ -279,43 +283,43 @@ public class JavaSelenium {
 		    alertbutton.click();
 		    Thread.sleep(2000);
 		    Alert alert = driver.switchTo().alert();
-		    System.out.println(alert.getText());
+		    logger.info(alert.getText());
 		    alert.accept();
 
 		    confirmbutton.click();
 		    Thread.sleep(2000);
 		    alert = driver.switchTo().alert();
-		    System.out.println(alert.getText());
+		    logger.info(alert.getText());
 		    alert.dismiss();
 
 		    promptbutton.click();
 		    Thread.sleep(2000);
 		    alert = driver.switchTo().alert();
-		    System.out.println(alert.getText());
+		    logger.info(alert.getText());
 		    alert.sendKeys("JavaSE");
 		    alert.accept();
 		    Thread.sleep(2000);
 		    String value = promptmessage.getAttribute("textContent");
-		    System.out.println(value);
+		    logger.info(value);
 
 		    //----- manual alert trigger
-		    System.out.println("1. Click Alert button!!");
+		    logger.info("1. Click Alert button!!");
 		    		    
 		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		    alert = wait.until(ExpectedConditions.alertIsPresent());
 		    
 		    alert = driver.switchTo().alert();
-		    System.out.println(alert.getText());
+		    logger.info(alert.getText());
 		    alert.accept();
 		    Thread.sleep(2000);
 
 		    
-		    System.out.println("2. Click Confirm button!!");
+		    logger.info("2. Click Confirm button!!");
 		    
 		    alert = wait.until(ExpectedConditions.alertIsPresent());
 		    
 		    alert = driver.switchTo().alert();
-		    System.out.println(alert.getText());
+		    logger.info(alert.getText());
 		    alert.dismiss();
 		    Thread.sleep(2000);
 		    	    
@@ -325,13 +329,13 @@ public class JavaSelenium {
 	}
 	
 	public void HandleFramesiFrames(WebDriver driver) {
-		System.out.println("-- HandleFramesiFrames --");
+		logger.info("-- HandleFramesiFrames --");
 		
 	    String url = "https://ui.vision/demo/webtest/frames/";
 	    driver.get(url);
 
 	    List<WebElement> framewindow = driver.findElements(By.xpath("//frame"));
-	    System.out.println("Number of frames: " + framewindow.size());
+	    logger.info("Number of frames: " + framewindow.size());
 
 	    // approach 1: using locator
 	    driver.switchTo().defaultContent();
@@ -369,7 +373,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleWebTablePagination(WebDriver driver) {
-		System.out.println("-- HandleWebTablePagination --");
+		logger.info("-- HandleWebTablePagination --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
 	    driver.get(url);
@@ -384,8 +388,8 @@ public class JavaSelenium {
 
 	    List<WebElement> rowscells = paginationtable.findElements(By.cssSelector("tbody tr td"));
 
-	    System.out.println("Number of columns: " + columns.size());
-	    System.out.println("Number of rows: " + rows.size());
+	    logger.info("Number of columns: " + columns.size());
+	    logger.info("Number of rows: " + rows.size());
 
 	    // select checkbox
 	    WebElement matchedrow = driver.findElement(By.xpath("//td[text()='Product 2']//following-sibling::td//input"));
@@ -401,25 +405,25 @@ public class JavaSelenium {
 	        rowarray.add(elements.getText());
 	        index ++;
 	        if (index == 4) {
-	            System.out.println(rowarray);
+	            logger.info(rowarray);
 	            index = 0;
 			}
 		}
 
 	    List<WebElement> pages = driver.findElements(By.xpath("//ul[@id='pagination']//li//a"));
 	    for (WebElement page : pages) {
-	        System.out.println(page.getText());
+	        logger.info(page.getText());
 	        page.click();
 
 	        rows = paginationtable.findElements(By.cssSelector("tbody tr"));
 	        for (WebElement elements : rows) {
-	            System.out.println(elements.getText());
+	            logger.info(elements.getText());
 			}
 		}
 	}
 	
 	public void HandleDatePickers(WebDriver driver) {
-		System.out.println("-- HandleDatePickers --");
+		logger.info("-- HandleDatePickers --");
 		
 		try {
 		    String url = "https://testautomationpractice.blogspot.com/";
@@ -466,7 +470,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleMouseActions(WebDriver driver) {
-		System.out.println("-- HandleMouseActions --");
+		logger.info("-- HandleMouseActions --");
 		
 		try {
 		    String url = "https://demo.opencart.com/";
@@ -504,10 +508,10 @@ public class JavaSelenium {
 		    action.doubleClick(buttondoubleclick).perform();
 	
 		    WebElement field1 = driver.findElement(By.xpath("//input[@id='field1']"));
-		    System.out.println("Text is: " + field1.getAttribute("value"));
+		    logger.info("Text is: " + field1.getAttribute("value"));
 	
 		    WebElement field2 = driver.findElement(By.xpath("//input[@id='field2']"));
-		    System.out.println("Text is: " + field2.getAttribute("value"));
+		    logger.info("Text is: " + field2.getAttribute("value"));
 	
 		    // -----How to handle Mouse Drag and Drop-----
 		    WebElement draggable = driver.findElement(By.xpath("//div[@id='draggable']"));
@@ -520,7 +524,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleKeyboardActions(WebDriver driver) {
-		System.out.println("-- HandleKeyboardActions --");
+		logger.info("-- HandleKeyboardActions --");
 		
 	    String url = "https://gotranscript.com/text-compare/";
 	    driver.get(url);
@@ -549,7 +553,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleUploadFiles(WebDriver driver) {
-		System.out.println("-- HandleUploadFiles --");
+		logger.info("-- HandleUploadFiles --");
 		
 	    String url = "https://www.foundit.in/";
 	    driver.get(url);
@@ -561,7 +565,7 @@ public class JavaSelenium {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='mqfihd-upload']")));
 			
 		} catch (TimeoutException e) {
-			System.out.println("-- [TIMEOUT] --");
+			logger.warn("-- [TIMEOUT] --");
 			e.printStackTrace();
 		}
 
@@ -569,7 +573,7 @@ public class JavaSelenium {
 	    driver.get(url);
 
 	    WebElement nofileslabel = driver.findElement(By.xpath("//ul[@id='fileList']/li"));
-	    System.out.println("\"No Files Selected\" = " + nofileslabel.getText());
+	    logger.info("\"No Files Selected\" = " + nofileslabel.getText());
 
 	    WebElement filestouploadbutton = driver.findElement(By.xpath("//input[@id='filesToUpload']"));
 	    filestouploadbutton.sendKeys("C:/Temp/sample1.txt \n C:/Temp/sample2.txt");
@@ -577,37 +581,37 @@ public class JavaSelenium {
 	    WebElement filename1 = driver.findElement(By.xpath("//ul[@id='fileList']/li[1]"));
 	    WebElement  filename2 = driver.findElement(By.xpath("//ul[@id='fileList']/li[2]"));
 
-	    System.out.println("\"sample1.txt\" = " + filename1.getText());
-	    System.out.println("\"sample2.txt\" = " + filename2.getText());	
+	    logger.info("\"sample1.txt\" = " + filename1.getText());
+	    logger.info("\"sample2.txt\" = " + filename2.getText());	
 	}
 	
 	public void HandlePagesWindows(WebDriver driver) {
-		System.out.println("-- HandlePagesWindows --");
+		logger.info("-- HandlePagesWindows --");
 		
 	    String url = "https://opensource-demo.orangehrmlive.com/";
 	    driver.get(url);
 
 	    String originalwindow = driver.getWindowHandle();
-	    System.out.println(driver.getTitle());
+	    logger.info(driver.getTitle());
 
 	    driver.switchTo().newWindow(WindowType.TAB);
 	    driver.get("https://www.orangehrm.com/");
 	    String tabwindow = driver.getWindowHandle();
-	    System.out.println(driver.getTitle());
+	    logger.info(driver.getTitle());
 
 	    driver.switchTo().newWindow(WindowType.WINDOW);
 	    driver.get("https://www.google.com/");
 	    String newwindow = driver.getWindowHandle();
-	    System.out.println(driver.getTitle());
+	    logger.info(driver.getTitle());
 	    Threadsleep(2000);
 	    driver.close();
 
-	    System.out.println("Original Window: " + originalwindow);
-	    System.out.println("Tab Window: " + tabwindow);
-	    System.out.println("New Window: " + newwindow);
+	    logger.info("Original Window: " + originalwindow);
+	    logger.info("Tab Window: " + tabwindow);
+	    logger.info("New Window: " + newwindow);
 
 	    Set<String> totalwindows = driver.getWindowHandles();
-	    System.out.println("Number of Window(s): " + totalwindows.size());
+	    logger.info("Number of Window(s): " + totalwindows.size());
 
 	    driver.switchTo().window(tabwindow);
 	    Threadsleep(1000);
@@ -618,7 +622,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleMultiplePagesWindows(WebDriver driver) {
-		System.out.println("-- HandleMultiplePagesWindows --");
+		logger.info("-- HandleMultiplePagesWindows --");
 		
 		String url = "https://opensource-demo.orangehrmlive.com/";
 	    driver.get(url);
@@ -626,7 +630,7 @@ public class JavaSelenium {
 	    // Original Window
 	    driver.get("https://opensource-demo.orangehrmlive.com/");
 	    String originalwindow = driver.getWindowHandle();
-	    System.out.println(driver.getTitle());
+	    logger.info(driver.getTitle());
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='OrangeHRM, Inc']")));
@@ -640,21 +644,21 @@ public class JavaSelenium {
 	    driver.switchTo().window(openwindowsIndex);
 
 	    String tabwindow = driver.getWindowHandle();
-	    System.out.println(driver.getTitle());
+	    logger.info(driver.getTitle());
 
 	    // New Window
 	    driver.switchTo().newWindow(WindowType.WINDOW);
 	    driver.get("https://www.google.com");
 	    String newwindow = driver.getWindowHandle();
-	    System.out.println(driver.getTitle());
+	    logger.info(driver.getTitle());
 	    Threadsleep(2);
 
-	    System.out.println("Original Window: " + originalwindow);
-	    System.out.println("Tab Window: " + tabwindow);
-	    System.out.println("New Window: " + newwindow);
+	    logger.info("Original Window: " + originalwindow);
+	    logger.info("Tab Window: " + tabwindow);
+	    logger.info("New Window: " + newwindow);
 
 	    Set<String> totalwindows = driver.getWindowHandles();
-	    System.out.println("Number of Window(s): " + totalwindows.size());
+	    logger.info("Number of Window(s): " + totalwindows.size());
 
 	    driver.switchTo().window(originalwindow);
 	    WebElement usernameinput = driver.findElement(By.xpath("//input[@name='username']"));
@@ -678,7 +682,7 @@ public class JavaSelenium {
 	}
 	
 	public void HandleCaptureScreen(WebDriver driver) {
-		System.out.println("-- HandleCaptureScreen --");
+		logger.info("-- HandleCaptureScreen --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
 	    driver.get(url);
@@ -690,15 +694,15 @@ public class JavaSelenium {
 		File file = new File(pathString);
 		
 	    if (!file.exists()) {
-	    	System.out.println("Directory created");
+	    	logger.info("Directory created");
 	    	file.mkdir();
 	    } else {
-	    	System.out.println("Directory already exists");
+	    	logger.info("Directory already exists");
 	    }
 
 	    //Capture screen
 	    String savefile = "./captures/window_" + dtf.format(now) + ".png";
-	    System.out.println(savefile);
+	    logger.info(savefile);
 	    File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);   
 	    try {
 			FileUtils.copyFile(sourceFile, new File(savefile));
@@ -708,7 +712,7 @@ public class JavaSelenium {
 
 	    //Capture element
 	    savefile = "./captures/element_" + dtf.format(now) + ".png";
-	    System.out.println(savefile);
+	    logger.info(savefile);
 	    WebElement droppablelement = driver.findElement(By.xpath("//div[@id='droppable']"));
 	    sourceFile = ((TakesScreenshot)droppablelement).getScreenshotAs(OutputType.FILE);
 	    try {
@@ -719,7 +723,7 @@ public class JavaSelenium {
 	    
 	    //Capture fullscreen
 //	    savefile = "./captures/full_" + dtf.format(now) + ".png";
-//	    System.out.println(savefile);
+//	    logger.info(savefile);
 //	    WebElement fullscreen = driver.findElement(By.tagName("body"));
 //	    sourceFile = ((TakesScreenshot)fullscreen).getScreenshotAs(OutputType.FILE);
 //	    try {
@@ -730,11 +734,11 @@ public class JavaSelenium {
 }	
 	
 	public void HandleUsingClass(WebDriver driver) {
-		System.out.println("-- HandleUsingClass --");
+		logger.info("-- HandleUsingClass --");
 		
 		// class within same file
 	    MyClass myclassinstance = new MyClass();
-	    System.out.println(myclassinstance.x);
+	    logger.info(myclassinstance.x);
 	    myclassinstance.loopPrint();
 	    
 	    //class from external file
@@ -762,7 +766,7 @@ public class JavaSelenium {
 	//		watch.start();
 	//		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
 	//		LocalDateTime now = LocalDateTime.now();  			
-	//		System.out.println("Start Execution: " + dtf.format(now));
+	//		logger.info("Start Execution: " + dtf.format(now));
 	//		
 	//	    InitializeDriver();
 	//	    
@@ -790,7 +794,7 @@ public class JavaSelenium {
 	//	    DateFormat df = new SimpleDateFormat("HH 'hours', mm 'mins', ss 'seconds', SSS 'ms'");
 	//		df.setTimeZone(TimeZone.getTimeZone("GMT+0"));
 	//		String elapsedTime = df.format(watch.getTime());			
-	//		System.out.println("Time Elapsed: " + elapsedTime);
+	//		logger.info("Time Elapsed: " + elapsedTime);
 	//	}
 }
 
@@ -804,7 +808,7 @@ class MyClass {
 	
 	public void loopPrint() {
 		for (int i=0; i < 5; i++) {
-			System.out.println(i);
+			JavaSelenium.logger.info(i);
 		}
 	}
 }

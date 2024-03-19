@@ -37,15 +37,19 @@
     <td></td>
   </tr>
     <tr>
+    <td>TimersPage.java</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>config.property</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
+    <td>log4j2.properties</td>
     <td></td>
   </tr>
   <tr>
+    <td>propertieslogs.log</td>
     <td></td>
-    <td></td>
-  </tr>
+  </tr>  
 </table>

@@ -6,10 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class OpenPage {
-		
 	private WebDriver driver;
 	private String initsearchinput;
-
+	
 	public OpenPage(WebDriver driver) {
 		this.driver = driver;
 		this.initsearchinput = "//textarea[@name='q']";
