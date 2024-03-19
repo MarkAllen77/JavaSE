@@ -35,6 +35,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.time.StopWatch;
 import org.testng.Assert;
 
+import SourcePages.OpenPage;
+
 
 public class JavaSelenium {
 	/*
@@ -742,7 +744,7 @@ public class JavaSelenium {
 	    myclassinstance.loopPrint();
 	    
 	    //class from external file
-	    Page classGoogleInstancePage = new Page(driver);
+	    OpenPage classGoogleInstancePage = new OpenPage(driver);
 	    classGoogleInstancePage.openPage("https://www.google.com");
 	    classGoogleInstancePage.enterSearchInput("java selenium");
 	    Threadsleep(2000);
@@ -770,22 +772,22 @@ public class JavaSelenium {
 		
 	    InitializeDriver();
 	    
-//	    HandleInputandRadio();
-//	    HandleDropdown();
-//	    HandleMultiDropdown();
-//	    HandleBootstrapDropdown();
-//	    HandleAutoSuggestion();
-//	    HandleHiddenItems();
-//	    HandleDialogAlerts();
-//	    HandleFramesiFrames();
-//	    HandleWebTablePagination();
-//	    HandleDatePickers();
-//	    HandleMouseActions();
-//	    HandleKeyboardActions();
-//	    HandleUploadFiles();
-//	    HandlePagesWindows();
-//	    HandleMultiplePagesWindows();
-//	    HandleCaptureScreen();
+	    HandleInputandRadio();
+	    HandleDropdown();
+	    HandleMultiDropdown();
+	    HandleBootstrapDropdown();
+	    HandleAutoSuggestion();
+	    HandleHiddenItems();
+	    HandleDialogAlerts();
+	    HandleFramesiFrames();
+	    HandleWebTablePagination();
+	    HandleDatePickers();
+	    HandleMouseActions();
+	    HandleKeyboardActions();
+	    HandleUploadFiles();
+	    HandlePagesWindows();
+	    HandleMultiplePagesWindows();
+	    HandleCaptureScreen();
 	    HandleUsingClass();
 	    
 	    CloseAndQuitBrowser();

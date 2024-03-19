@@ -1,17 +1,16 @@
-package JavaMain;
+package SourcePages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Page {
-	
-	
+public class OpenPage {
+		
 	private WebDriver driver;
 	private String initsearchinput;
 
-	public Page(WebDriver driver) {
+	public OpenPage(WebDriver driver) {
 		this.driver = driver;
 		this.initsearchinput = "//textarea[@name='q']";
 	}
