@@ -3,6 +3,12 @@ package JavaMain;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -38,8 +44,12 @@ import org.testng.Assert;
 import SourcePages.OpenPage;
 
 
+
 public class JavaSelenium {
 	public static Logger logger = LogManager.getLogger();
+	ExtentSparkReporter htmlReporter;
+	ExtentReports extent;
+	ExtentTest test;
 	WebDriver driver;
 	
 	public JavaSelenium(WebDriver driver) {		
@@ -48,6 +58,29 @@ public class JavaSelenium {
 	
 	public WebDriver InitializeDriver() {
 		try {
+		    //------------------- Extent Report ------------------------------
+			//ExtentHtmlReporter and specified the file path for the Extent Report
+			htmlReporter =  new ExtentSparkReporter("./Reports/extentReport.html");
+			//initialize extentreports
+			extent = new ExtentReports();
+			extent.attachReporter(htmlReporter);
+			
+			//set the title of the extent report
+			htmlReporter.config().setDocumentTitle("Automation Report");
+			//set the report name
+			htmlReporter.config().setReportName("Google Search");
+			//specify the time format
+			htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
+			//theme
+			//htmlReporter.config().setTheme(Theme.STANDARD);
+			htmlReporter.config().setTheme(Theme.DARK);
+			
+		    test = extent.createTest("Test Case 1","Initialize Extent report.");
+		    			
+			test.log(Status.INFO,"1");
+			test.log(Status.PASS,"2");
+			
+			test = extent.createTest("Test Case 2","Initialize Chrome driver.");
 			String projectPath = System.getProperty("user.dir");
 			logger.info(projectPath);
 			
@@ -60,10 +93,12 @@ public class JavaSelenium {
 			System.setProperty("webdriver.chrome.driver", prop.getProperty("ChromeDriver"));
 			
 			ChromeOptions options = new ChromeOptions();
-//			options.addArguments("start-maximized");
-//			options.addArguments("start-fullscreen");
+			//options.addArguments("start-maximized");
+			//options.addArguments("start-fullscreen");
 			
-		    driver = new ChromeDriver(options); 
+		    driver = new ChromeDriver(options);
+		    
+		    extent.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
