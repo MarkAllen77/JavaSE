@@ -1,7 +1,12 @@
 # Selenium Webdriver using Java
 **PROGRAMMING LANGUAGE:** *Java Maven on Eclipse*<br />
 
-**INTRO:** *Java code using Selenium in handling different objects in a web application. Sample functions were translated from the Playwright code.*<br /> 
+**INTRO:** *Java code using Selenium in handling different objects in a web application. Sample functions were translated from the Playwright code.*<br />
+
+**FRAMEWORK:**<br />
+  &nbsp;&nbsp;&nbsp; TestNG<br /> 
+  &nbsp;&nbsp;&nbsp; Extent<br /> 
+  &nbsp;&nbsp;&nbsp; Log4j<br /> 
 
 **FUNCTIONS:**<br />
   &nbsp;&nbsp;&nbsp; HandleInputandRadio<br />

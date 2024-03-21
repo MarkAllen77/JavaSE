@@ -77,9 +77,7 @@ public class JavaSelenium {
 			
 		    test = extent.createTest("Test Case 1","Initialize Extent report.");
 		    			
-			test.log(Status.INFO,"1");
-			test.log(Status.PASS,"2");
-			
+		
 			test = extent.createTest("Test Case 2","Initialize Chrome driver.");
 			String projectPath = System.getProperty("user.dir");
 			logger.info(projectPath);
@@ -97,8 +95,6 @@ public class JavaSelenium {
 			//options.addArguments("start-fullscreen");
 			
 		    driver = new ChromeDriver(options);
-		    
-		    extent.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -109,13 +105,17 @@ public class JavaSelenium {
 		try {
 			Thread.sleep(3000);
 			driver.quit();
+			
+			extent.flush();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public void HandleInputandRadio(WebDriver driver) {
+		test = extent.createTest("Test Case 3","Handle Input and Radio objects.");
 		logger.info("-- HandleInputandRadio --");
+		test.log(Status.INFO,"-- HandleInputandRadio --");
 		
 		String url = "https://demoqa.com/automation-practice-form";
 		driver.get(url);

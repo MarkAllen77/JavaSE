@@ -365,3 +365,49 @@
 [INFO ] 2024-03-20 09:15:14.576 [main] JavaSelenium: 3
 [INFO ] 2024-03-20 09:15:14.577 [main] JavaSelenium: 4
 [INFO ] 2024-03-20 09:15:24.603 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 34 seconds, 125 ms
+[INFO ] 2024-03-20 13:02:06.845 [main] JavaSelenium: Start Execution: 2024/03/20 13:02:05
+[INFO ] 2024-03-20 13:02:07.505 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-20 13:02:10.980 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-20 13:02:17.936 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:02:17.967 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:02:18.000 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-20 13:02:18.382 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-20 13:02:18.561 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-20 13:02:18.662 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:02:18.677 [main] JavaSelenium: false
+[INFO ] 2024-03-20 13:02:18.769 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:02:18.905 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-20 13:02:18.996 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:02:19.010 [main] JavaSelenium: false
+[INFO ] 2024-03-20 13:02:19.107 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:02:21.345 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-20 13:02:21.348 [main] JavaSelenium: 55
+[INFO ] 2024-03-20 13:02:21.348 [main] JavaSelenium: 0
+[INFO ] 2024-03-20 13:02:21.349 [main] JavaSelenium: 1
+[INFO ] 2024-03-20 13:02:21.349 [main] JavaSelenium: 2
+[INFO ] 2024-03-20 13:02:21.349 [main] JavaSelenium: 3
+[INFO ] 2024-03-20 13:02:21.349 [main] JavaSelenium: 4
+[INFO ] 2024-03-20 13:02:31.910 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 26 seconds, 339 ms
+[INFO ] 2024-03-20 13:03:17.213 [main] JavaSelenium: Start Execution: 2024/03/20 13:03:16
+[INFO ] 2024-03-20 13:03:17.564 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-20 13:03:19.887 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-20 13:03:25.646 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:03:25.668 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:03:25.691 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-20 13:03:25.932 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-20 13:03:26.112 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-20 13:03:26.259 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:03:26.277 [main] JavaSelenium: false
+[INFO ] 2024-03-20 13:03:26.385 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:03:26.511 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-20 13:03:26.633 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:03:26.651 [main] JavaSelenium: false
+[INFO ] 2024-03-20 13:03:26.775 [main] JavaSelenium: true
+[INFO ] 2024-03-20 13:03:29.017 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-20 13:03:29.019 [main] JavaSelenium: 55
+[INFO ] 2024-03-20 13:03:29.019 [main] JavaSelenium: 0
+[INFO ] 2024-03-20 13:03:29.020 [main] JavaSelenium: 1
+[INFO ] 2024-03-20 13:03:29.020 [main] JavaSelenium: 2
+[INFO ] 2024-03-20 13:03:29.020 [main] JavaSelenium: 3
+[INFO ] 2024-03-20 13:03:29.020 [main] JavaSelenium: 4
+[INFO ] 2024-03-20 13:03:40.235 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 23 seconds, 994 ms
