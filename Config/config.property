@@ -1,1 +1,3 @@
 ChromeDriver=./Driver/chromedriver.exe
+MSEdgeDriver=./Driver/msedgedriver.exe
+GeckoDriver=./Driver/geckodriver.exe

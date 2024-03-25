@@ -34,6 +34,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -77,7 +81,7 @@ public class JavaSelenium {
 	 * DEFINITION: 
 	 * @return driver assign value to variable based on web browser
 	 */
-	public WebDriver InitializeDriver() {
+	public WebDriver InitializeDriver(String browserName) {
 		try {
 		    //------------------- Extent Report ------------------------------
 			//ExtentHtmlReporter and specified the file path for the Extent Report
@@ -109,35 +113,50 @@ public class JavaSelenium {
 			input = new FileInputStream("./Config/config.property");
 			prop.load(input);
 			
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("ChromeDriver"));
-			
-			ChromeOptions options = new ChromeOptions();
-			//options.addArguments("start-maximized");
-			//options.addArguments("start-fullscreen");
-			//options.addArguments("--headless", "--window-size=1920,1200");
-			
-		    driver = new ChromeDriver(options);
+			switch (browserName) {
+				case "Chrome" :
+					System.setProperty("webdriver.chrome.driver", prop.getProperty("ChromeDriver"));
+					
+					ChromeOptions options = new ChromeOptions();
+					//options.addArguments("start-maximized");
+					//options.addArguments("start-fullscreen");
+					//options.addArguments("--headless", "--window-size=1920,1200");
+					
+				    driver = new ChromeDriver(options);
+				    logger.info("Using Chrome browser");
+
+					break;
+				case "MSEdge" :
+					System.setProperty("webdriver.edge.driver", prop.getProperty("MSEdgeDriver"));
+					
+					EdgeOptions optionsE = new EdgeOptions();
+					//options.addArguments("start-maximized");
+					//options.addArguments("start-fullscreen");
+					//options.addArguments("--headless", "--window-size=1920,1200");
+					
+				    driver = new EdgeDriver(optionsE);
+				    logger.info("Using MSEdge browser");
+					break;
+				case "FireFox" :
+					System.setProperty("webdriver.gecko.driver", prop.getProperty("GeckoDriver"));
+					
+					FirefoxOptions optionsF = new FirefoxOptions();
+					//options.addArguments("start-maximized");
+					//options.addArguments("start-fullscreen");
+					//options.addArguments("--headless", "--window-size=1920,1200");
+					
+				    driver = new FirefoxDriver(optionsF);
+				    logger.info("Using FireFox browser");
+					break;
+				default :
+					break;					
+			}			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return driver;
 	}
-	/**
-	 * 
-	 * DEFINITION: 
-	 * @param driver selenium webdriver for specific web browser
-	 */
-	public void CloseAndQuitBrowser(WebDriver driver) {
-		try {
-			Thread.sleep(3000);
-			driver.quit();
-			
-			extent.flush();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-	
+		
 	/**
 	 * 
 	 * DEFINITION: 
@@ -145,8 +164,8 @@ public class JavaSelenium {
 	 */
 	public void HandleInputandRadio(WebDriver driver) {
 		test = extent.createTest("Test Case 3","Handle Input and Radio objects.");
-		logger.info("-- HandleInputandRadio --");
 		test.log(Status.INFO,"-- HandleInputandRadio --");
+		logger.info("-- HandleInputandRadio --");
 		
 		String url = "https://demoqa.com/automation-practice-form";
 		driver.get(url);
@@ -211,8 +230,10 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleDropdown(WebDriver driver) {
+		test = extent.createTest("Test Case 4","Handle dropdown objects.");
+		test.log(Status.INFO,"-- HandleDropdown --");
 		logger.info("-- HandleDropdown --");
-		
+				
 		String url = "https://testautomationpractice.blogspot.com/";
 		driver.get(url);
 		
@@ -241,6 +262,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleMultiDropdown(WebDriver driver) {
+		test = extent.createTest("Test Case 5","Handle multiple content dropdown objects.");
+		test.log(Status.INFO,"-- HandleMultiDropdown --");
 		logger.info("-- HandleMultiDropdown --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -278,6 +301,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleBootstrapDropdown(WebDriver driver) {
+		test = extent.createTest("Test Case 6","Handle multiple type dropdown objects.");
+		test.log(Status.INFO,"-- HandleBootstrapDropdown --");
 		logger.info("-- HandleBootstrapDropdown --");
 		
 	    String url = "https://www.jquery-az.com/boots/demo.php?ex=63.0_2";
@@ -311,6 +336,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleAutoSuggestion(WebDriver driver) {
+		test = extent.createTest("Test Case 7","Handle auto suggestion list objects.");
+		test.log(Status.INFO,"-- HandleAutoSuggestion --");		
 		logger.info("-- HandleAutoSuggestion --");
 		
 		String url = "https://www.redbus.in/";
@@ -343,6 +370,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleHiddenItems(WebDriver driver) {
+		test = extent.createTest("Test Case 8","Handle objects that disappear during inspection.");
+		test.log(Status.INFO,"-- HandleHiddenItems --");				
 		logger.info("-- HandleHiddenItems --");
 		
 	    String url = "https://opensource-demo.orangehrmlive.com/";
@@ -365,6 +394,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleDialogAlerts(WebDriver driver) {
+		test = extent.createTest("Test Case 9","Handle pop-up alerts and dialog objects.");
+		test.log(Status.INFO,"-- HandleDialogAlerts --");				
 		logger.info("-- HandleDialogAlerts --");
 		
 		try {
@@ -430,6 +461,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleFramesiFrames(WebDriver driver) {
+		test = extent.createTest("Test Case 10","Handle iFrames and Frames in web page.");
+		test.log(Status.INFO,"-- HandleFramesiFrames --");						
 		logger.info("-- HandleFramesiFrames --");
 		
 	    String url = "https://ui.vision/demo/webtest/frames/";
@@ -479,6 +512,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleWebTablePagination(WebDriver driver) {
+		test = extent.createTest("Test Case 11","Handle tables and pagination objects.");
+		test.log(Status.INFO,"-- HandleWebTablePagination --");								
 		logger.info("-- HandleWebTablePagination --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -534,6 +569,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleDatePickers(WebDriver driver) {
+		test = extent.createTest("Test Case 12","Handle date selection for datepicker objects.");
+		test.log(Status.INFO,"-- HandleDatePickers --");										
 		logger.info("-- HandleDatePickers --");
 		
 		try {
@@ -586,6 +623,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleMouseActions(WebDriver driver) {
+		test = extent.createTest("Test Case 13","Handle inputs from mouse buttons and actions.");
+		test.log(Status.INFO,"-- HandleMouseActions --");												
 		logger.info("-- HandleMouseActions --");
 		
 		try {
@@ -645,6 +684,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleKeyboardActions(WebDriver driver) {
+		test = extent.createTest("Test Case 14","Handle keyboard key press and key combination.");
+		test.log(Status.INFO,"-- HandleKeyboardActions --");														
 		logger.info("-- HandleKeyboardActions --");
 		
 	    String url = "https://gotranscript.com/text-compare/";
@@ -679,6 +720,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleUploadFiles(WebDriver driver) {
+		test = extent.createTest("Test Case 15","Handle uploading of file.");
+		test.log(Status.INFO,"-- HandleUploadFiles --");																
 		logger.info("-- HandleUploadFiles --");
 		
 	    String url = "https://www.foundit.in/";
@@ -691,6 +734,7 @@ public class JavaSelenium {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='mqfihd-upload']")));
 			
 		} catch (TimeoutException e) {
+			test.log(Status.FAIL, "-- [TIMEOUT] --");
 			logger.warn("-- [TIMEOUT] --");
 			e.printStackTrace();
 		}
@@ -717,6 +761,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandlePagesWindows(WebDriver driver) {
+		test = extent.createTest("Test Case 16","Handle creation of new tab or window.");
+		test.log(Status.INFO,"-- HandlePagesWindows --");																		
 		logger.info("-- HandlePagesWindows --");
 		
 	    String url = "https://opensource-demo.orangehrmlive.com/";
@@ -758,6 +804,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleMultiplePagesWindows(WebDriver driver) {
+		test = extent.createTest("Test Case 17","Handle opening and switching to tab or window.");
+		test.log(Status.INFO,"-- HandleMultiplePagesWindows --");																				
 		logger.info("-- HandleMultiplePagesWindows --");
 		
 		String url = "https://opensource-demo.orangehrmlive.com/";
@@ -823,6 +871,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleCaptureScreen(WebDriver driver) {
+		test = extent.createTest("Test Case 18","Handle screenshot of window or an element.");
+		test.log(Status.INFO,"-- HandleCaptureScreen --");																						
 		logger.info("-- HandleCaptureScreen --");
 		
 		String url = "https://testautomationpractice.blogspot.com/";
@@ -880,6 +930,8 @@ public class JavaSelenium {
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleUsingClass(WebDriver driver) {
+		test = extent.createTest("Test Case 19","Demonstration of class inheritance.");
+		test.log(Status.INFO,"-- HandleUsingClass --");																								
 		logger.info("-- HandleUsingClass --");
 		
 		// class within same file
@@ -915,6 +967,27 @@ public class JavaSelenium {
 	public void SelectProduct(String productname) {
 		WebElement matchedrow = driver.findElement(By.xpath("//td[text()='" + productname + "']//following-sibling::td//input"));
     	matchedrow.click();
+	}
+	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
+	public void CloseAndQuitBrowser(WebDriver driver) {
+		test = extent.createTest("Test Case 20","Close browser and end automation session.");
+		test.log(Status.INFO,"-- CloseAndQuitBrowser --");																								
+		logger.info("-- CloseAndQuitBrowser --");
+		
+		try {
+			Thread.sleep(3000);
+			driver.quit();
+			
+			extent.flush();
+			logger.info("Thread: " + Thread.currentThread().getId());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 		
 	//	public static void main(String[] args) {

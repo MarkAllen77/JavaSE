@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-25T12:22:01 CST" name="Suite" finished-at="2024-03-25T12:22:16 CST" duration-ms="15023">
+    <groups>
+    </groups>
+    <test started-at="2024-03-25T12:22:01 CST" name="TestMSEdge" finished-at="2024-03-25T12:22:16 CST" duration-ms="15023">
+      <class name="JavaTest.JavaTestNG">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:JavaTest.JavaTestNG@26bab2f1]" started-at="2024-03-25T12:22:01 CST" name="Setup" finished-at="2024-03-25T12:22:04 CST" duration-ms="3939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MSEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="TestCase()[pri:0, instance:JavaTest.JavaTestNG@26bab2f1]" started-at="2024-03-25T12:22:04 CST" name="TestCase" finished-at="2024-03-25T12:22:12 CST" duration-ms="7476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:JavaTest.JavaTestNG@26bab2f1]" started-at="2024-03-25T12:22:12 CST" name="TearDown" finished-at="2024-03-25T12:22:16 CST" duration-ms="3591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- JavaTest.JavaTestNG -->
+    </test> <!-- TestMSEdge -->
+    <test started-at="2024-03-25T12:22:01 CST" name="TestChrome" finished-at="2024-03-25T12:22:16 CST" duration-ms="15023">
+      <class name="JavaTest.JavaTestNG">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:JavaTest.JavaTestNG@2d1dee39]" started-at="2024-03-25T12:22:01 CST" name="Setup" finished-at="2024-03-25T12:22:03 CST" duration-ms="2420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="TestCase()[pri:0, instance:JavaTest.JavaTestNG@2d1dee39]" started-at="2024-03-25T12:22:03 CST" name="TestCase" finished-at="2024-03-25T12:22:11 CST" duration-ms="7585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:JavaTest.JavaTestNG@2d1dee39]" started-at="2024-03-25T12:22:11 CST" name="TearDown" finished-at="2024-03-25T12:22:16 CST" duration-ms="4958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- JavaTest.JavaTestNG -->
+    </test> <!-- TestChrome -->
+  </suite> <!-- Suite -->
+</testng-results>

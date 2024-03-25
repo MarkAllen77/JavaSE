@@ -411,3 +411,437 @@
 [INFO ] 2024-03-20 13:03:29.020 [main] JavaSelenium: 3
 [INFO ] 2024-03-20 13:03:29.020 [main] JavaSelenium: 4
 [INFO ] 2024-03-20 13:03:40.235 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 23 seconds, 994 ms
+[INFO ] 2024-03-25 11:14:36.631 [main] JavaSelenium: Start Execution: 2024/03/25 11:14:35
+[INFO ] 2024-03-25 11:14:37.045 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 11:14:39.933 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-25 11:14:46.906 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:14:46.933 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:14:46.954 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-25 11:14:47.193 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-25 11:14:47.358 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-25 11:14:47.459 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:14:47.479 [main] JavaSelenium: false
+[INFO ] 2024-03-25 11:14:47.586 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:14:47.701 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-25 11:14:47.774 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:14:47.788 [main] JavaSelenium: false
+[INFO ] 2024-03-25 11:14:47.871 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:14:50.122 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 11:14:50.124 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 11:14:50.124 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 11:14:50.125 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 11:14:50.125 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 11:14:50.125 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 11:14:50.125 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 11:15:00.911 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 28 seconds, 006 ms
+[INFO ] 2024-03-25 11:29:09.945 [main] JavaSelenium: Start Execution: 2024/03/25 11:29:09
+[INFO ] 2024-03-25 11:29:10.271 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 11:29:12.577 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-25 11:29:19.757 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:29:19.774 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:29:19.790 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-25 11:29:20.057 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-25 11:29:20.213 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-25 11:29:20.311 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:29:20.325 [main] JavaSelenium: false
+[INFO ] 2024-03-25 11:29:20.410 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:29:20.500 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-25 11:29:20.577 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:29:20.589 [main] JavaSelenium: false
+[INFO ] 2024-03-25 11:29:20.667 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:29:22.929 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 11:29:22.930 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 11:29:22.931 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 11:29:22.931 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 11:29:22.931 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 11:29:22.931 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 11:29:22.932 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 11:29:33.461 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 24 seconds, 495 ms
+[INFO ] 2024-03-25 11:33:35.485 [main] JavaSelenium: Start Execution: 2024/03/25 11:33:34
+[INFO ] 2024-03-25 11:33:35.799 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 11:33:37.956 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-25 11:33:43.982 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:33:44.001 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:33:44.015 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-25 11:33:44.226 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-25 11:33:44.335 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-25 11:33:44.471 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:33:44.491 [main] JavaSelenium: false
+[INFO ] 2024-03-25 11:33:44.634 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:33:44.749 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-25 11:33:44.847 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:33:44.862 [main] JavaSelenium: false
+[INFO ] 2024-03-25 11:33:44.949 [main] JavaSelenium: true
+[INFO ] 2024-03-25 11:33:47.246 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 11:33:47.248 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 11:33:47.248 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 11:33:47.248 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 11:33:47.249 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 11:33:47.249 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 11:33:47.249 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 11:33:57.930 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 23 seconds, 361 ms
+[INFO ] 2024-03-25 11:53:35.654 [main] JavaSelenium: Start Execution: 2024/03/25 11:53:35
+[INFO ] 2024-03-25 11:53:35.981 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 11:53:38.210 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 11:53:38.212 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 11:53:38.212 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 11:53:38.213 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 11:53:38.213 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 11:53:38.213 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 11:53:38.213 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 11:53:49.122 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 13 seconds, 483 ms
+[INFO ] 2024-03-25 11:57:28.075 [main] JavaSelenium: Start Execution: 2024/03/25 11:57:28
+[INFO ] 2024-03-25 11:57:28.401 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 11:57:30.631 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 11:57:30.633 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 11:57:30.633 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 11:57:30.633 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 11:57:30.634 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 11:57:30.634 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 11:57:30.634 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 11:57:41.845 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 13 seconds, 782 ms
+[INFO ] 2024-03-25 12:01:38.412 [main] JavaSelenium: Start Execution: 2024/03/25 12:01:38
+[INFO ] 2024-03-25 12:01:38.709 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:02:52.893 [main] JavaSelenium: Start Execution: 2024/03/25 12:02:52
+[INFO ] 2024-03-25 12:02:53.197 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:04:54.457 [main] JavaSelenium: Start Execution: 2024/03/25 12:04:54
+[INFO ] 2024-03-25 12:04:54.783 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:06:36.103 [main] JavaSelenium: Start Execution: 2024/03/25 12:06:36
+[INFO ] 2024-03-25 12:06:36.405 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:07:23.240 [main] JavaSelenium: Start Execution: 2024/03/25 12:07:23
+[INFO ] 2024-03-25 12:07:23.536 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:09:32.807 [main] JavaSelenium: Start Execution: 2024/03/25 12:09:32
+[INFO ] 2024-03-25 12:09:33.185 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:09:35.606 [main] JavaSelenium: Using MSEdge browser
+[INFO ] 2024-03-25 12:09:35.649 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:09:35.652 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 12:09:35.652 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 12:09:35.652 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 12:09:35.653 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 12:09:35.653 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 12:09:35.653 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 12:09:47.923 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 15 seconds, 134 ms
+[INFO ] 2024-03-25 12:15:25.027 [TestNG-tests-2] JavaSelenium: Start Execution: 2024/03/25 12:15:25
+[INFO ] 2024-03-25 12:15:25.027 [TestNG-tests-1] JavaSelenium: Start Execution: 2024/03/25 12:15:25
+[INFO ] 2024-03-25 12:15:25.318 [TestNG-tests-2] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:15:25.318 [TestNG-tests-1] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:15:28.122 [TestNG-tests-2] JavaSelenium: Using MSEdge browser
+[INFO ] 2024-03-25 12:15:28.122 [TestNG-tests-1] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-25 12:15:28.181 [TestNG-tests-2] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:15:28.182 [TestNG-tests-1] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:15:28.184 [TestNG-tests-2] JavaSelenium: 55
+[INFO ] 2024-03-25 12:15:28.184 [TestNG-tests-1] JavaSelenium: 55
+[INFO ] 2024-03-25 12:15:28.184 [TestNG-tests-2] JavaSelenium: 0
+[INFO ] 2024-03-25 12:15:28.184 [TestNG-tests-1] JavaSelenium: 0
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-2] JavaSelenium: 1
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-1] JavaSelenium: 1
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-2] JavaSelenium: 2
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-1] JavaSelenium: 2
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-2] JavaSelenium: 3
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-1] JavaSelenium: 3
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-2] JavaSelenium: 4
+[INFO ] 2024-03-25 12:15:28.185 [TestNG-tests-1] JavaSelenium: 4
+[INFO ] 2024-03-25 12:15:39.813 [TestNG-tests-2] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 14 seconds, 801 ms
+[INFO ] 2024-03-25 12:15:42.423 [TestNG-tests-1] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 17 seconds, 411 ms
+[INFO ] 2024-03-25 12:20:46.809 [TestNG-tests-1] JavaSelenium: Start Execution: 2024/03/25 12:20:46
+[INFO ] 2024-03-25 12:20:46.809 [TestNG-tests-2] JavaSelenium: Start Execution: 2024/03/25 12:20:46
+[INFO ] 2024-03-25 12:20:47.109 [TestNG-tests-1] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:20:47.109 [TestNG-tests-2] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:20:49.287 [TestNG-tests-1] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-25 12:20:49.324 [TestNG-tests-1] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:20:49.326 [TestNG-tests-1] JavaSelenium: 55
+[INFO ] 2024-03-25 12:20:49.326 [TestNG-tests-1] JavaSelenium: 0
+[INFO ] 2024-03-25 12:20:49.326 [TestNG-tests-1] JavaSelenium: 1
+[INFO ] 2024-03-25 12:20:49.326 [TestNG-tests-1] JavaSelenium: 2
+[INFO ] 2024-03-25 12:20:49.326 [TestNG-tests-1] JavaSelenium: 3
+[INFO ] 2024-03-25 12:20:49.327 [TestNG-tests-1] JavaSelenium: 4
+[INFO ] 2024-03-25 12:20:50.852 [TestNG-tests-2] JavaSelenium: Using MSEdge browser
+[INFO ] 2024-03-25 12:20:50.866 [TestNG-tests-2] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:20:50.867 [TestNG-tests-2] JavaSelenium: 55
+[INFO ] 2024-03-25 12:20:50.868 [TestNG-tests-2] JavaSelenium: 0
+[INFO ] 2024-03-25 12:20:50.868 [TestNG-tests-2] JavaSelenium: 1
+[INFO ] 2024-03-25 12:20:50.869 [TestNG-tests-2] JavaSelenium: 2
+[INFO ] 2024-03-25 12:20:50.869 [TestNG-tests-2] JavaSelenium: 3
+[INFO ] 2024-03-25 12:20:50.869 [TestNG-tests-2] JavaSelenium: 4
+[INFO ] 2024-03-25 12:21:02.281 [TestNG-tests-1] JavaSelenium: Thread: 18
+[INFO ] 2024-03-25 12:21:02.282 [TestNG-tests-1] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 15 seconds, 489 ms
+[INFO ] 2024-03-25 12:22:01.053 [TestNG-tests-2] JavaSelenium: Start Execution: 2024/03/25 12:22:01
+[INFO ] 2024-03-25 12:22:01.053 [TestNG-tests-1] JavaSelenium: Start Execution: 2024/03/25 12:22:01
+[INFO ] 2024-03-25 12:22:01.359 [TestNG-tests-2] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:22:01.359 [TestNG-tests-1] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:22:03.440 [TestNG-tests-1] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-25 12:22:03.486 [TestNG-tests-1] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:22:03.489 [TestNG-tests-1] JavaSelenium: 55
+[INFO ] 2024-03-25 12:22:03.489 [TestNG-tests-1] JavaSelenium: 0
+[INFO ] 2024-03-25 12:22:03.490 [TestNG-tests-1] JavaSelenium: 1
+[INFO ] 2024-03-25 12:22:03.490 [TestNG-tests-1] JavaSelenium: 2
+[INFO ] 2024-03-25 12:22:03.490 [TestNG-tests-1] JavaSelenium: 3
+[INFO ] 2024-03-25 12:22:03.490 [TestNG-tests-1] JavaSelenium: 4
+[INFO ] 2024-03-25 12:22:04.958 [TestNG-tests-2] JavaSelenium: Using MSEdge browser
+[INFO ] 2024-03-25 12:22:04.967 [TestNG-tests-2] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:22:04.968 [TestNG-tests-2] JavaSelenium: 55
+[INFO ] 2024-03-25 12:22:04.968 [TestNG-tests-2] JavaSelenium: 0
+[INFO ] 2024-03-25 12:22:04.968 [TestNG-tests-2] JavaSelenium: 1
+[INFO ] 2024-03-25 12:22:04.969 [TestNG-tests-2] JavaSelenium: 2
+[INFO ] 2024-03-25 12:22:04.969 [TestNG-tests-2] JavaSelenium: 3
+[INFO ] 2024-03-25 12:22:04.970 [TestNG-tests-2] JavaSelenium: 4
+[INFO ] 2024-03-25 12:22:16.029 [TestNG-tests-2] JavaSelenium: Thread: 19
+[INFO ] 2024-03-25 12:22:16.029 [TestNG-tests-1] JavaSelenium: Thread: 18
+[INFO ] 2024-03-25 12:22:16.030 [TestNG-tests-2] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 14 seconds, 989 ms
+[INFO ] 2024-03-25 12:22:16.030 [TestNG-tests-1] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 14 seconds, 989 ms
+[INFO ] 2024-03-25 12:39:54.506 [main] JavaSelenium: Start Execution: 2024/03/25 12:39:53
+[INFO ] 2024-03-25 12:39:54.824 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:39:57.038 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-25 12:39:57.051 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-25 12:40:03.329 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:03.348 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:03.364 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-25 12:40:03.577 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-25 12:40:03.709 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-25 12:40:03.829 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:03.854 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:40:03.993 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:04.112 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-25 12:40:04.188 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:04.201 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:40:04.275 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:06.507 [main] JavaSelenium: -- HandleDropdown --
+[INFO ] 2024-03-25 12:40:13.620 [main] JavaSelenium: india
+[INFO ] 2024-03-25 12:40:13.693 [main] JavaSelenium: australia
+[INFO ] 2024-03-25 12:40:13.693 [main] JavaSelenium: -- HandleMultiDropdown --
+[INFO ] 2024-03-25 12:40:20.593 [main] JavaSelenium: Numer of options: 5
+[INFO ] 2024-03-25 12:40:20.677 [main] JavaSelenium: Value: Red
+[INFO ] 2024-03-25 12:40:20.693 [main] JavaSelenium: Value: Blue
+[INFO ] 2024-03-25 12:40:20.709 [main] JavaSelenium: Value: Green
+[INFO ] 2024-03-25 12:40:20.724 [main] JavaSelenium: Value: White
+[INFO ] 2024-03-25 12:40:20.724 [main] JavaSelenium: -- HandleBootstrapDropdown --
+[INFO ] 2024-03-25 12:40:25.264 [main] JavaSelenium: Numer of options: 11
+[INFO ] 2024-03-25 12:40:25.376 [main] JavaSelenium: HTML
+[INFO ] 2024-03-25 12:40:25.468 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:40:25.493 [main] JavaSelenium: CSS
+[INFO ] 2024-03-25 12:40:25.573 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:40:25.595 [main] JavaSelenium: Angular
+[INFO ] 2024-03-25 12:40:25.661 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:25.681 [main] JavaSelenium: Java
+[INFO ] 2024-03-25 12:40:25.759 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:40:25.827 [main] JavaSelenium: -- HandleAutoSuggestion --
+[INFO ] 2024-03-25 12:40:31.491 [main] JavaSelenium: Number of options:20
+[INFO ] 2024-03-25 12:40:31.520 [main] JavaSelenium: Delhi
+[INFO ] 2024-03-25 12:40:31.533 [main] JavaSelenium: ISBT Kashmiri Gate
+[INFO ] 2024-03-25 12:40:31.547 [main] JavaSelenium: Indira Gandhi International Airport
+[INFO ] 2024-03-25 12:40:31.561 [main] JavaSelenium: Akshardham Metro Station
+[INFO ] 2024-03-25 12:40:31.574 [main] JavaSelenium: Badarpur
+[INFO ] 2024-03-25 12:40:31.587 [main] JavaSelenium: Mayur Vihar
+[INFO ] 2024-03-25 12:40:31.600 [main] JavaSelenium: Dhaula Kuan
+[INFO ] 2024-03-25 12:40:31.615 [main] JavaSelenium: Majnu Ka Tilla
+[INFO ] 2024-03-25 12:40:31.630 [main] JavaSelenium: Morigate
+[INFO ] 2024-03-25 12:40:31.644 [main] JavaSelenium: RK Ashram
+[INFO ] 2024-03-25 12:40:31.764 [main] JavaSelenium: -- HandleHiddenItems --
+[INFO ] 2024-03-25 12:40:37.004 [main] JavaSelenium: -- HandleDialogAlerts --
+[INFO ] 2024-03-25 12:40:42.061 [main] JavaSelenium: I am an alert box!
+[INFO ] 2024-03-25 12:40:44.152 [main] JavaSelenium: Press a button!
+[INFO ] 2024-03-25 12:40:46.238 [main] JavaSelenium: Please enter your name:
+[INFO ] 2024-03-25 12:40:48.261 [main] JavaSelenium: Hello JavaSE! How are you today?
+[INFO ] 2024-03-25 12:40:48.261 [main] JavaSelenium: 1. Click Alert button!!
+[INFO ] 2024-03-25 12:40:58.412 [main] JavaSelenium: -- HandleFramesiFrames --
+[INFO ] 2024-03-25 12:41:02.233 [main] JavaSelenium: Number of frames: 5
+[INFO ] 2024-03-25 12:41:04.991 [main] JavaSelenium: -- HandleWebTablePagination --
+[INFO ] 2024-03-25 12:41:08.093 [main] JavaSelenium: Number of columns: 4
+[INFO ] 2024-03-25 12:41:08.094 [main] JavaSelenium: Number of rows: 5
+[INFO ] 2024-03-25 12:41:08.388 [main] JavaSelenium: [1, Product 1, $10.99, ]
+[INFO ] 2024-03-25 12:41:08.437 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, ]
+[INFO ] 2024-03-25 12:41:08.485 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, , 3, Product 3, $5.99, ]
+[INFO ] 2024-03-25 12:41:08.533 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, , 3, Product 3, $5.99, , 4, Product 4, $7.99, ]
+[INFO ] 2024-03-25 12:41:08.582 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, , 3, Product 3, $5.99, , 4, Product 4, $7.99, , 5, Product 5, $8.99, ]
+[INFO ] 2024-03-25 12:41:08.612 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 12:41:08.700 [main] JavaSelenium: 1 Product 1 $10.99
+[INFO ] 2024-03-25 12:41:08.717 [main] JavaSelenium: 2 Product 2 $19.99
+[INFO ] 2024-03-25 12:41:08.735 [main] JavaSelenium: 3 Product 3 $5.99
+[INFO ] 2024-03-25 12:41:08.752 [main] JavaSelenium: 4 Product 4 $7.99
+[INFO ] 2024-03-25 12:41:08.773 [main] JavaSelenium: 5 Product 5 $8.99
+[INFO ] 2024-03-25 12:41:08.788 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 12:41:08.881 [main] JavaSelenium: 6 Product 6 $9.99
+[INFO ] 2024-03-25 12:41:08.901 [main] JavaSelenium: 7 Product 7 $20.99
+[INFO ] 2024-03-25 12:41:08.920 [main] JavaSelenium: 8 Product 8 $15.99
+[INFO ] 2024-03-25 12:41:08.938 [main] JavaSelenium: 9 Product 9 $5.99
+[INFO ] 2024-03-25 12:41:08.959 [main] JavaSelenium: 10 Product 10 $16.99
+[INFO ] 2024-03-25 12:41:08.974 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 12:41:09.055 [main] JavaSelenium: 11 Product 11 $20.99
+[INFO ] 2024-03-25 12:41:09.080 [main] JavaSelenium: 12 Product 12 $24.99
+[INFO ] 2024-03-25 12:41:09.097 [main] JavaSelenium: 13 Product 13 $30.99
+[INFO ] 2024-03-25 12:41:09.113 [main] JavaSelenium: 14 Product 14 $19.99
+[INFO ] 2024-03-25 12:41:09.132 [main] JavaSelenium: 15 Product 15 $2.99
+[INFO ] 2024-03-25 12:41:09.145 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 12:41:09.224 [main] JavaSelenium: 16 Product 16 $10.99
+[INFO ] 2024-03-25 12:41:09.240 [main] JavaSelenium: 17 Product 17 $11.99
+[INFO ] 2024-03-25 12:41:09.258 [main] JavaSelenium: 18 Product 18 $13.99
+[INFO ] 2024-03-25 12:41:09.274 [main] JavaSelenium: 19 Product 19 $16.99
+[INFO ] 2024-03-25 12:41:09.290 [main] JavaSelenium: 20 Product 20 $17.99
+[INFO ] 2024-03-25 12:41:09.291 [main] JavaSelenium: -- HandleDatePickers --
+[INFO ] 2024-03-25 12:41:17.995 [main] JavaSelenium: -- HandleMouseActions --
+[INFO ] 2024-03-25 12:41:33.567 [main] JavaSelenium: Text is: Hello World!
+[INFO ] 2024-03-25 12:41:33.595 [main] JavaSelenium: Text is: Hello World!
+[INFO ] 2024-03-25 12:41:33.881 [main] JavaSelenium: -- HandleKeyboardActions --
+[INFO ] 2024-03-25 12:41:40.231 [main] JavaSelenium: -- HandleUploadFiles --
+[WARN ] 2024-03-25 12:41:53.282 [main] JavaSelenium: -- [TIMEOUT] --
+[INFO ] 2024-03-25 12:41:54.826 [main] JavaSelenium: "No Files Selected" = No Files Selected
+[INFO ] 2024-03-25 12:41:55.160 [main] JavaSelenium: "sample1.txt" = sample1.txt
+[INFO ] 2024-03-25 12:41:55.297 [main] JavaSelenium: "sample2.txt" = sample2.txt
+[INFO ] 2024-03-25 12:41:55.297 [main] JavaSelenium: -- HandlePagesWindows --
+[INFO ] 2024-03-25 12:41:57.026 [main] JavaSelenium: OrangeHRM
+[INFO ] 2024-03-25 12:42:01.851 [main] JavaSelenium: Human Resources Management Software | OrangeHRM
+[INFO ] 2024-03-25 12:42:03.714 [main] JavaSelenium: Google
+[INFO ] 2024-03-25 12:42:05.787 [main] JavaSelenium: Original Window: 5E7B81E18CA695924FDB27CD81165C7E
+[INFO ] 2024-03-25 12:42:05.787 [main] JavaSelenium: Tab Window: A808465EB7E550899BDA6E8747338C6A
+[INFO ] 2024-03-25 12:42:05.787 [main] JavaSelenium: New Window: DE4ABE6DE31243398B8D79D8EBC16749
+[INFO ] 2024-03-25 12:42:05.791 [main] JavaSelenium: Number of Window(s): 2
+[INFO ] 2024-03-25 12:42:08.893 [main] JavaSelenium: -- HandleMultiplePagesWindows --
+[INFO ] 2024-03-25 12:42:10.415 [main] JavaSelenium: OrangeHRM
+[INFO ] 2024-03-25 12:42:13.690 [main] JavaSelenium: Human Resources Management Software | OrangeHRM
+[INFO ] 2024-03-25 12:42:14.624 [main] JavaSelenium: Google
+[INFO ] 2024-03-25 12:42:14.628 [main] JavaSelenium: Original Window: 5E7B81E18CA695924FDB27CD81165C7E
+[INFO ] 2024-03-25 12:42:14.628 [main] JavaSelenium: Tab Window: FAE7906D4F233EC5D015A8FD93946D9E
+[INFO ] 2024-03-25 12:42:14.628 [main] JavaSelenium: New Window: 43614CC3E0EEE1BB71FCC245F16851B1
+[INFO ] 2024-03-25 12:42:14.633 [main] JavaSelenium: Number of Window(s): 3
+[INFO ] 2024-03-25 12:42:15.542 [main] JavaSelenium: -- HandleCaptureScreen --
+[INFO ] 2024-03-25 12:42:18.375 [main] JavaSelenium: Directory already exists
+[INFO ] 2024-03-25 12:42:18.376 [main] JavaSelenium: ./captures/window_20240325 124218.png
+[INFO ] 2024-03-25 12:42:18.662 [main] JavaSelenium: ./captures/element_20240325 124218.png
+[INFO ] 2024-03-25 12:42:18.756 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:42:18.757 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 12:42:18.758 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 12:42:18.758 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 12:42:18.758 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 12:42:18.758 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 12:42:18.758 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 12:42:24.912 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-03-25 12:42:28.905 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-03-25 12:42:28.906 [main] JavaSelenium: Time Elapsed: 00 hours, 02 mins, 35 seconds, 339 ms
+[INFO ] 2024-03-25 12:48:12.302 [main] JavaSelenium: Start Execution: 2024/03/25 12:48:11
+[INFO ] 2024-03-25 12:48:12.623 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-25 12:48:14.857 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-25 12:48:14.866 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-25 12:48:21.156 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:21.173 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:21.191 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-25 12:48:21.393 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-25 12:48:21.540 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-25 12:48:21.646 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:21.660 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:48:21.770 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:21.889 [main] JavaSelenium: Checkbox false
+[INFO ] 2024-03-25 12:48:21.963 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:21.976 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:48:22.054 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:24.320 [main] JavaSelenium: -- HandleDropdown --
+[INFO ] 2024-03-25 12:48:31.958 [main] JavaSelenium: india
+[INFO ] 2024-03-25 12:48:32.027 [main] JavaSelenium: australia
+[INFO ] 2024-03-25 12:48:32.028 [main] JavaSelenium: -- HandleMultiDropdown --
+[INFO ] 2024-03-25 12:48:37.851 [main] JavaSelenium: Numer of options: 5
+[INFO ] 2024-03-25 12:48:37.936 [main] JavaSelenium: Value: Red
+[INFO ] 2024-03-25 12:48:37.951 [main] JavaSelenium: Value: Blue
+[INFO ] 2024-03-25 12:48:37.964 [main] JavaSelenium: Value: Green
+[INFO ] 2024-03-25 12:48:37.978 [main] JavaSelenium: Value: White
+[INFO ] 2024-03-25 12:48:37.978 [main] JavaSelenium: -- HandleBootstrapDropdown --
+[INFO ] 2024-03-25 12:48:40.488 [main] JavaSelenium: Numer of options: 11
+[INFO ] 2024-03-25 12:48:40.593 [main] JavaSelenium: HTML
+[INFO ] 2024-03-25 12:48:40.671 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:48:40.694 [main] JavaSelenium: CSS
+[INFO ] 2024-03-25 12:48:40.775 [main] JavaSelenium: false
+[INFO ] 2024-03-25 12:48:40.797 [main] JavaSelenium: Angular
+[INFO ] 2024-03-25 12:48:40.860 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:40.879 [main] JavaSelenium: Java
+[INFO ] 2024-03-25 12:48:40.943 [main] JavaSelenium: true
+[INFO ] 2024-03-25 12:48:40.995 [main] JavaSelenium: -- HandleAutoSuggestion --
+[INFO ] 2024-03-25 12:48:45.311 [main] JavaSelenium: Number of options:20
+[INFO ] 2024-03-25 12:48:45.331 [main] JavaSelenium: Delhi
+[INFO ] 2024-03-25 12:48:45.344 [main] JavaSelenium: ISBT Kashmiri Gate
+[INFO ] 2024-03-25 12:48:45.357 [main] JavaSelenium: Indira Gandhi International Airport
+[INFO ] 2024-03-25 12:48:45.370 [main] JavaSelenium: Akshardham Metro Station
+[INFO ] 2024-03-25 12:48:45.384 [main] JavaSelenium: Badarpur
+[INFO ] 2024-03-25 12:48:45.398 [main] JavaSelenium: Mayur Vihar
+[INFO ] 2024-03-25 12:48:45.410 [main] JavaSelenium: Dhaula Kuan
+[INFO ] 2024-03-25 12:48:45.422 [main] JavaSelenium: Majnu Ka Tilla
+[INFO ] 2024-03-25 12:48:45.434 [main] JavaSelenium: Morigate
+[INFO ] 2024-03-25 12:48:45.447 [main] JavaSelenium: RK Ashram
+[INFO ] 2024-03-25 12:48:45.603 [main] JavaSelenium: -- HandleHiddenItems --
+[INFO ] 2024-03-25 12:48:51.147 [main] JavaSelenium: -- HandleDialogAlerts --
+[INFO ] 2024-03-25 12:48:55.468 [main] JavaSelenium: I am an alert box!
+[INFO ] 2024-03-25 12:48:57.547 [main] JavaSelenium: Press a button!
+[INFO ] 2024-03-25 12:48:59.617 [main] JavaSelenium: Please enter your name:
+[INFO ] 2024-03-25 12:49:01.640 [main] JavaSelenium: Hello JavaSE! How are you today?
+[INFO ] 2024-03-25 12:49:01.641 [main] JavaSelenium: 1. Click Alert button!!
+[INFO ] 2024-03-25 12:49:11.820 [main] JavaSelenium: -- HandleFramesiFrames --
+[INFO ] 2024-03-25 12:49:15.723 [main] JavaSelenium: Number of frames: 5
+[INFO ] 2024-03-25 12:49:18.471 [main] JavaSelenium: -- HandleWebTablePagination --
+[INFO ] 2024-03-25 12:49:21.330 [main] JavaSelenium: Number of columns: 4
+[INFO ] 2024-03-25 12:49:21.331 [main] JavaSelenium: Number of rows: 5
+[INFO ] 2024-03-25 12:49:21.618 [main] JavaSelenium: [1, Product 1, $10.99, ]
+[INFO ] 2024-03-25 12:49:21.665 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, ]
+[INFO ] 2024-03-25 12:49:21.714 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, , 3, Product 3, $5.99, ]
+[INFO ] 2024-03-25 12:49:21.762 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, , 3, Product 3, $5.99, , 4, Product 4, $7.99, ]
+[INFO ] 2024-03-25 12:49:21.811 [main] JavaSelenium: [1, Product 1, $10.99, , 2, Product 2, $19.99, , 3, Product 3, $5.99, , 4, Product 4, $7.99, , 5, Product 5, $8.99, ]
+[INFO ] 2024-03-25 12:49:21.840 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 12:49:21.927 [main] JavaSelenium: 1 Product 1 $10.99
+[INFO ] 2024-03-25 12:49:21.943 [main] JavaSelenium: 2 Product 2 $19.99
+[INFO ] 2024-03-25 12:49:21.959 [main] JavaSelenium: 3 Product 3 $5.99
+[INFO ] 2024-03-25 12:49:21.974 [main] JavaSelenium: 4 Product 4 $7.99
+[INFO ] 2024-03-25 12:49:21.991 [main] JavaSelenium: 5 Product 5 $8.99
+[INFO ] 2024-03-25 12:49:22.005 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 12:49:22.080 [main] JavaSelenium: 6 Product 6 $9.99
+[INFO ] 2024-03-25 12:49:22.097 [main] JavaSelenium: 7 Product 7 $20.99
+[INFO ] 2024-03-25 12:49:22.113 [main] JavaSelenium: 8 Product 8 $15.99
+[INFO ] 2024-03-25 12:49:22.131 [main] JavaSelenium: 9 Product 9 $5.99
+[INFO ] 2024-03-25 12:49:22.147 [main] JavaSelenium: 10 Product 10 $16.99
+[INFO ] 2024-03-25 12:49:22.161 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 12:49:22.240 [main] JavaSelenium: 11 Product 11 $20.99
+[INFO ] 2024-03-25 12:49:22.264 [main] JavaSelenium: 12 Product 12 $24.99
+[INFO ] 2024-03-25 12:49:22.280 [main] JavaSelenium: 13 Product 13 $30.99
+[INFO ] 2024-03-25 12:49:22.296 [main] JavaSelenium: 14 Product 14 $19.99
+[INFO ] 2024-03-25 12:49:22.313 [main] JavaSelenium: 15 Product 15 $2.99
+[INFO ] 2024-03-25 12:49:22.325 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 12:49:22.401 [main] JavaSelenium: 16 Product 16 $10.99
+[INFO ] 2024-03-25 12:49:22.416 [main] JavaSelenium: 17 Product 17 $11.99
+[INFO ] 2024-03-25 12:49:22.432 [main] JavaSelenium: 18 Product 18 $13.99
+[INFO ] 2024-03-25 12:49:22.448 [main] JavaSelenium: 19 Product 19 $16.99
+[INFO ] 2024-03-25 12:49:22.464 [main] JavaSelenium: 20 Product 20 $17.99
+[INFO ] 2024-03-25 12:49:22.464 [main] JavaSelenium: -- HandleDatePickers --
+[INFO ] 2024-03-25 12:49:31.720 [main] JavaSelenium: -- HandleMouseActions --
+[INFO ] 2024-03-25 12:49:45.588 [main] JavaSelenium: Text is: Hello World!
+[INFO ] 2024-03-25 12:49:45.615 [main] JavaSelenium: Text is: Hello World!
+[INFO ] 2024-03-25 12:49:45.905 [main] JavaSelenium: -- HandleKeyboardActions --
+[INFO ] 2024-03-25 12:49:52.215 [main] JavaSelenium: -- HandleUploadFiles --
+[WARN ] 2024-03-25 12:50:05.235 [main] JavaSelenium: -- [TIMEOUT] --
+[INFO ] 2024-03-25 12:50:06.862 [main] JavaSelenium: "No Files Selected" = No Files Selected
+[INFO ] 2024-03-25 12:50:07.333 [main] JavaSelenium: "sample1.txt" = sample1.txt
+[INFO ] 2024-03-25 12:50:07.348 [main] JavaSelenium: "sample2.txt" = sample2.txt
+[INFO ] 2024-03-25 12:50:07.349 [main] JavaSelenium: -- HandlePagesWindows --
+[INFO ] 2024-03-25 12:50:08.962 [main] JavaSelenium: OrangeHRM
+[INFO ] 2024-03-25 12:50:13.216 [main] JavaSelenium: Human Resources Management Software | OrangeHRM
+[INFO ] 2024-03-25 12:50:16.740 [main] JavaSelenium: Google
+[INFO ] 2024-03-25 12:50:18.828 [main] JavaSelenium: Original Window: C48194EA45172A901AADF17D026D8269
+[INFO ] 2024-03-25 12:50:18.829 [main] JavaSelenium: Tab Window: 473A0EA429A0364F477948249AF9F8FC
+[INFO ] 2024-03-25 12:50:18.831 [main] JavaSelenium: New Window: 1364141604E8CB17C22A3C3C55CBBDAA
+[INFO ] 2024-03-25 12:50:18.838 [main] JavaSelenium: Number of Window(s): 2
+[INFO ] 2024-03-25 12:50:21.941 [main] JavaSelenium: -- HandleMultiplePagesWindows --
+[INFO ] 2024-03-25 12:50:23.378 [main] JavaSelenium: OrangeHRM
+[INFO ] 2024-03-25 12:50:26.294 [main] JavaSelenium: Human Resources Management Software | OrangeHRM
+[INFO ] 2024-03-25 12:50:27.206 [main] JavaSelenium: Google
+[INFO ] 2024-03-25 12:50:27.209 [main] JavaSelenium: Original Window: C48194EA45172A901AADF17D026D8269
+[INFO ] 2024-03-25 12:50:27.209 [main] JavaSelenium: Tab Window: 92FD2765EFD65EE957AB806B8FE9D24A
+[INFO ] 2024-03-25 12:50:27.209 [main] JavaSelenium: New Window: 735522F561FE18882C9B771EF4F0F8F9
+[INFO ] 2024-03-25 12:50:27.213 [main] JavaSelenium: Number of Window(s): 3
+[INFO ] 2024-03-25 12:50:28.058 [main] JavaSelenium: -- HandleCaptureScreen --
+[INFO ] 2024-03-25 12:50:30.816 [main] JavaSelenium: Directory already exists
+[INFO ] 2024-03-25 12:50:30.816 [main] JavaSelenium: ./captures/window_20240325 125030.png
+[INFO ] 2024-03-25 12:50:31.091 [main] JavaSelenium: ./captures/element_20240325 125030.png
+[INFO ] 2024-03-25 12:50:31.192 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-25 12:50:31.193 [main] JavaSelenium: 55
+[INFO ] 2024-03-25 12:50:31.193 [main] JavaSelenium: 0
+[INFO ] 2024-03-25 12:50:31.193 [main] JavaSelenium: 1
+[INFO ] 2024-03-25 12:50:31.194 [main] JavaSelenium: 2
+[INFO ] 2024-03-25 12:50:31.194 [main] JavaSelenium: 3
+[INFO ] 2024-03-25 12:50:31.194 [main] JavaSelenium: 4
+[INFO ] 2024-03-25 12:50:37.311 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-03-25 12:50:41.289 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-03-25 12:50:41.291 [main] JavaSelenium: Time Elapsed: 00 hours, 02 mins, 29 seconds, 916 ms

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="TestChrome">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<classes>
+		<class name = "JavaTest.JavaTestNG"/>
+	</classes>
+  </test> <!-- Test -->
+  <test name="TestMSEdge">
+	<parameter name="browserName" value="MSEdge"></parameter>
+	<classes>
+		<class name = "JavaTest.JavaTestNG"/>
+	</classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->

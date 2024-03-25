@@ -39,6 +39,14 @@
     <td></td>
   </tr>
   <tr>
+    <td>JavaTestCycle.java</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>JavaTestNG.java</td>
+    <td></td>
+  </tr>  
+  <tr>
     <td>OpenPage.java</td>
     <td></td>
   </tr>
