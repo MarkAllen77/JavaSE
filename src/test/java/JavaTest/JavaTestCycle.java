@@ -5,6 +5,13 @@ import org.openqa.selenium.WebDriver;
 import JavaMain.JavaSelenium;
 import SourcePages.TimersPage;
 
+/**
+ * 
+ * DEFINITION:
+ * @author markallen77
+ * @version 20240325 
+ * 
+ */
 public class JavaTestCycle {
 	/*
 	 * 1. create selenium object code
@@ -13,10 +20,16 @@ public class JavaTestCycle {
 	 * 4. apply testng
 	 * 5. apply extent report
 	 * 6. add log files
+	 * 7. add java docs
 	 */
 	
 	static WebDriver driver;
-	
+
+	/**
+	 * 
+	 * DEFINITION:
+	 * @param args intended arguments
+	 */
 	public static void main(String[] args) {
 		TimersPage TimersPageInstancePage = new TimersPage();
 		TimersPageInstancePage.TimersPageStart();

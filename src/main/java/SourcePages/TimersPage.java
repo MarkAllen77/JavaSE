@@ -10,9 +10,21 @@ import org.apache.commons.lang3.time.StopWatch;
 
 import JavaMain.JavaSelenium;
 
+/**
+ * 
+ * DEFINITION:
+ * @author markallen77
+ * @version 20240325 
+ * 
+ */
 public class TimersPage {
 	StopWatch watch = new StopWatch();
 	
+	/**
+	 * 
+	 * DEFINITION:
+	 * 
+	 */
 	public void TimersPageStart() {
 		watch.start();
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); 
@@ -20,6 +32,11 @@ public class TimersPage {
 		JavaSelenium.logger.info("Start Execution: " + dtf.format(now));
 	}
 	
+	/**
+	 * 
+	 * DEFINITION:
+	 * 
+	 */
 	public void TimersPageStop() {
 	    watch.stop();
 	    DateFormat df = new SimpleDateFormat("HH 'hours', mm 'mins', ss 'seconds', SSS 'ms'");

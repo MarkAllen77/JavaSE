@@ -5,19 +5,41 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
+/**
+ * 
+ * DEFINITION:
+ * @author markallen77
+ * @version 20240325 
+ * 
+ */
 public class OpenPage {
 	private WebDriver driver;
 	private String initsearchinput;
 	
+	/**
+	 * 
+	 * DEFINITION:
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public OpenPage(WebDriver driver) {
 		this.driver = driver;
 		this.initsearchinput = "//textarea[@name='q']";
 	}
 	
+	/**
+	 * 
+	 * DEFINITION:
+	 * @param url submitted url for interaction
+	 */
 	public void openPage(String url) {
 		this.driver.get(url);
 	}
 	
+	/**
+	 * 
+	 * DEFINITION:
+	 * @param searchKeyword submitted variable for browser search
+	 */
 	public void enterSearchInput(String searchKeyword) {
 		this.driver.findElement(By.xpath(initsearchinput)).sendKeys(searchKeyword);;
 		Threadsleep(1000);
@@ -30,6 +52,11 @@ public class OpenPage {
 		Threadsleep(2000);
 	}
 	
+	/**
+	 * 
+	 * DEFINITION:
+	 * @param inMilliSeconds the amount of time the process will hold until next line
+	 */
 	public void Threadsleep(int inMilliSeconds) {
 		try {
 			Thread.sleep(inMilliSeconds);

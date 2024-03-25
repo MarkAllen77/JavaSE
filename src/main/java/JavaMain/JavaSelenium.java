@@ -44,18 +44,39 @@ import org.testng.Assert;
 import SourcePages.OpenPage;
 
 
-
+/**
+ * 
+ * DEFINITION:
+ * @author markallen77
+ * @version 20240325 
+ * 
+ */
 public class JavaSelenium {
+	/**
+	 * 
+	 * DEFINITION: 
+	 * 
+	 */
 	public static Logger logger = LogManager.getLogger();
 	ExtentSparkReporter htmlReporter;
 	ExtentReports extent;
 	ExtentTest test;
 	WebDriver driver;
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public JavaSelenium(WebDriver driver) {		
 		this.driver = driver;
 	}
-	
+
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @return driver assign value to variable based on web browser
+	 */
 	public WebDriver InitializeDriver() {
 		try {
 		    //------------------- Extent Report ------------------------------
@@ -93,6 +114,7 @@ public class JavaSelenium {
 			ChromeOptions options = new ChromeOptions();
 			//options.addArguments("start-maximized");
 			//options.addArguments("start-fullscreen");
+			//options.addArguments("--headless", "--window-size=1920,1200");
 			
 		    driver = new ChromeDriver(options);
 		} catch (IOException e) {
@@ -100,7 +122,11 @@ public class JavaSelenium {
 		}
 		return driver;
 	}
-	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void CloseAndQuitBrowser(WebDriver driver) {
 		try {
 			Thread.sleep(3000);
@@ -112,6 +138,11 @@ public class JavaSelenium {
 		}
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleInputandRadio(WebDriver driver) {
 		test = extent.createTest("Test Case 3","Handle Input and Radio objects.");
 		logger.info("-- HandleInputandRadio --");
@@ -174,6 +205,11 @@ public class JavaSelenium {
 		    driver.findElement(By.xpath(box)).click();		
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleDropdown(WebDriver driver) {
 		logger.info("-- HandleDropdown --");
 		
@@ -199,6 +235,11 @@ public class JavaSelenium {
 	    logger.info(countryDropdown.getAttribute("value"));
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleMultiDropdown(WebDriver driver) {
 		logger.info("-- HandleMultiDropdown --");
 		
@@ -231,6 +272,11 @@ public class JavaSelenium {
 		}		
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleBootstrapDropdown(WebDriver driver) {
 		logger.info("-- HandleBootstrapDropdown --");
 		
@@ -259,6 +305,11 @@ public class JavaSelenium {
 	    }	    
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleAutoSuggestion(WebDriver driver) {
 		logger.info("-- HandleAutoSuggestion --");
 		
@@ -285,7 +336,12 @@ public class JavaSelenium {
 	        }	    	
 	    }
 	}
-
+	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleHiddenItems(WebDriver driver) {
 		logger.info("-- HandleHiddenItems --");
 		
@@ -303,6 +359,11 @@ public class JavaSelenium {
 	    passwordinput.sendKeys("admin123");	
 	}
 
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleDialogAlerts(WebDriver driver) {
 		logger.info("-- HandleDialogAlerts --");
 		
@@ -363,6 +424,11 @@ public class JavaSelenium {
 		}		
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleFramesiFrames(WebDriver driver) {
 		logger.info("-- HandleFramesiFrames --");
 		
@@ -407,6 +473,11 @@ public class JavaSelenium {
 	    frame3radio.click();	
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleWebTablePagination(WebDriver driver) {
 		logger.info("-- HandleWebTablePagination --");
 		
@@ -457,6 +528,11 @@ public class JavaSelenium {
 		}
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleDatePickers(WebDriver driver) {
 		logger.info("-- HandleDatePickers --");
 		
@@ -504,6 +580,11 @@ public class JavaSelenium {
 		}	
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleMouseActions(WebDriver driver) {
 		logger.info("-- HandleMouseActions --");
 		
@@ -558,6 +639,11 @@ public class JavaSelenium {
 		}
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleKeyboardActions(WebDriver driver) {
 		logger.info("-- HandleKeyboardActions --");
 		
@@ -587,6 +673,11 @@ public class JavaSelenium {
 	    Threadsleep(2000);	
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleUploadFiles(WebDriver driver) {
 		logger.info("-- HandleUploadFiles --");
 		
@@ -620,6 +711,11 @@ public class JavaSelenium {
 	    logger.info("\"sample2.txt\" = " + filename2.getText());	
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandlePagesWindows(WebDriver driver) {
 		logger.info("-- HandlePagesWindows --");
 		
@@ -656,6 +752,11 @@ public class JavaSelenium {
 	    Threadsleep(2000);	
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleMultiplePagesWindows(WebDriver driver) {
 		logger.info("-- HandleMultiplePagesWindows --");
 		
@@ -716,6 +817,11 @@ public class JavaSelenium {
 	    driver.switchTo().window(originalwindow);	
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleCaptureScreen(WebDriver driver) {
 		logger.info("-- HandleCaptureScreen --");
 		
@@ -757,17 +863,22 @@ public class JavaSelenium {
 		}
 	    
 	    //Capture fullscreen
-//	    savefile = "./captures/full_" + dtf.format(now) + ".png";
-//	    logger.info(savefile);
-//	    WebElement fullscreen = driver.findElement(By.tagName("body"));
-//	    sourceFile = ((TakesScreenshot)fullscreen).getScreenshotAs(OutputType.FILE);
-//	    try {
-//			FileUtils.copyFile(sourceFile, new File(savefile));
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
+		//	    savefile = "./captures/full_" + dtf.format(now) + ".png";
+		//	    logger.info(savefile);
+		//	    WebElement fullscreen = driver.findElement(By.tagName("body"));
+		//	    sourceFile = ((TakesScreenshot)fullscreen).getScreenshotAs(OutputType.FILE);
+		//	    try {
+		//			FileUtils.copyFile(sourceFile, new File(savefile));
+		//		} catch (IOException e) {
+		//			e.printStackTrace();
+		//		}
 }	
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
 	public void HandleUsingClass(WebDriver driver) {
 		logger.info("-- HandleUsingClass --");
 		
@@ -783,6 +894,11 @@ public class JavaSelenium {
 	    Threadsleep(2000);
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param inMilliSeconds the amount of time the process will hold until next line
+	 */
 	public void Threadsleep(int inMilliSeconds) {
 		try {
 			Thread.sleep(inMilliSeconds);
@@ -791,6 +907,11 @@ public class JavaSelenium {
 		}
 	}
 	
+	/**
+	 * 
+	 * DEFINITION: 
+	 * @param productname retrieved from the website, use the table and click product
+	 */
 	public void SelectProduct(String productname) {
 		WebElement matchedrow = driver.findElement(By.xpath("//td[text()='" + productname + "']//following-sibling::td//input"));
     	matchedrow.click();
@@ -833,7 +954,11 @@ public class JavaSelenium {
 	//	}
 }
 
-
+/**
+ * 
+ * DEFINITION: 
+ * 
+ */
 class MyClass {
 	int x;
 	
