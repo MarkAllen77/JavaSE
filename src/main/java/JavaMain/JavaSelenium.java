@@ -50,7 +50,7 @@ import SourcePages.OpenPage;
 
 /**
  * 
- * DEFINITION:
+ * Definition: JavaSelenium class containing all web object functions and selenium interaction
  * @author markallen77
  * @version 20240325 
  * 
@@ -58,7 +58,7 @@ import SourcePages.OpenPage;
 public class JavaSelenium {
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: Logger class using the framework Log4j for creating text log files
 	 * 
 	 */
 	public static Logger logger = LogManager.getLogger();
@@ -69,7 +69,7 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: JavaSelenium class constructor
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public JavaSelenium(WebDriver driver) {		
@@ -78,8 +78,9 @@ public class JavaSelenium {
 
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @return driver assign value to variable based on web browser
+	 * @param browserName generated from TestNG parameters
 	 */
 	public WebDriver InitializeDriver(String browserName) {
 		try {
@@ -100,10 +101,10 @@ public class JavaSelenium {
 			//htmlReporter.config().setTheme(Theme.STANDARD);
 			htmlReporter.config().setTheme(Theme.DARK);
 			
-		    test = extent.createTest("Test Case 1","Initialize Extent report.");
+		    test = extent.createTest("Test Case 1 Report","Initialize Extent report.");
 		    			
 		
-			test = extent.createTest("Test Case 2","Initialize Chrome driver.");
+			test = extent.createTest("Test Case 2 Driver","Initialize Chrome driver.");
 			String projectPath = System.getProperty("user.dir");
 			logger.info(projectPath);
 			
@@ -159,11 +160,11 @@ public class JavaSelenium {
 		
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleInputandRadio(WebDriver driver) {
-		test = extent.createTest("Test Case 3","Handle Input and Radio objects.");
+		test = extent.createTest("Test Case 3 InputRadio","Handle Input and Radio objects.");
 		test.log(Status.INFO,"-- HandleInputandRadio --");
 		logger.info("-- HandleInputandRadio --");
 		
@@ -226,11 +227,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleDropdown(WebDriver driver) {
-		test = extent.createTest("Test Case 4","Handle dropdown objects.");
+		test = extent.createTest("Test Case 4 Dropdown","Handle dropdown objects.");
 		test.log(Status.INFO,"-- HandleDropdown --");
 		logger.info("-- HandleDropdown --");
 				
@@ -258,11 +259,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleMultiDropdown(WebDriver driver) {
-		test = extent.createTest("Test Case 5","Handle multiple content dropdown objects.");
+		test = extent.createTest("Test Case 5 MultiSelect","Handle multiple content dropdown objects.");
 		test.log(Status.INFO,"-- HandleMultiDropdown --");
 		logger.info("-- HandleMultiDropdown --");
 		
@@ -297,11 +298,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleBootstrapDropdown(WebDriver driver) {
-		test = extent.createTest("Test Case 6","Handle multiple type dropdown objects.");
+		test = extent.createTest("Test Case 6 DropDownType","Handle multiple type dropdown objects.");
 		test.log(Status.INFO,"-- HandleBootstrapDropdown --");
 		logger.info("-- HandleBootstrapDropdown --");
 		
@@ -332,11 +333,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleAutoSuggestion(WebDriver driver) {
-		test = extent.createTest("Test Case 7","Handle auto suggestion list objects.");
+		test = extent.createTest("Test Case 7 AutoSuggestion","Handle auto suggestion list objects.");
 		test.log(Status.INFO,"-- HandleAutoSuggestion --");		
 		logger.info("-- HandleAutoSuggestion --");
 		
@@ -366,11 +367,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleHiddenItems(WebDriver driver) {
-		test = extent.createTest("Test Case 8","Handle objects that disappear during inspection.");
+		test = extent.createTest("Test Case 8 BlurObjects","Handle objects that disappear during inspection.");
 		test.log(Status.INFO,"-- HandleHiddenItems --");				
 		logger.info("-- HandleHiddenItems --");
 		
@@ -390,11 +391,11 @@ public class JavaSelenium {
 
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleDialogAlerts(WebDriver driver) {
-		test = extent.createTest("Test Case 9","Handle pop-up alerts and dialog objects.");
+		test = extent.createTest("Test Case 9 Alerts","Handle pop-up alerts and dialog objects.");
 		test.log(Status.INFO,"-- HandleDialogAlerts --");				
 		logger.info("-- HandleDialogAlerts --");
 		
@@ -457,11 +458,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleFramesiFrames(WebDriver driver) {
-		test = extent.createTest("Test Case 10","Handle iFrames and Frames in web page.");
+		test = extent.createTest("Test Case 10 Frames","Handle iFrames and Frames in web page.");
 		test.log(Status.INFO,"-- HandleFramesiFrames --");						
 		logger.info("-- HandleFramesiFrames --");
 		
@@ -508,11 +509,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleWebTablePagination(WebDriver driver) {
-		test = extent.createTest("Test Case 11","Handle tables and pagination objects.");
+		test = extent.createTest("Test Case 11 Tables","Handle tables and pagination objects.");
 		test.log(Status.INFO,"-- HandleWebTablePagination --");								
 		logger.info("-- HandleWebTablePagination --");
 		
@@ -565,11 +566,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleDatePickers(WebDriver driver) {
-		test = extent.createTest("Test Case 12","Handle date selection for datepicker objects.");
+		test = extent.createTest("Test Case 12 Dates","Handle date selection for datepicker objects.");
 		test.log(Status.INFO,"-- HandleDatePickers --");										
 		logger.info("-- HandleDatePickers --");
 		
@@ -619,11 +620,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleMouseActions(WebDriver driver) {
-		test = extent.createTest("Test Case 13","Handle inputs from mouse buttons and actions.");
+		test = extent.createTest("Test Case 13 Mouse","Handle inputs from mouse buttons and actions.");
 		test.log(Status.INFO,"-- HandleMouseActions --");												
 		logger.info("-- HandleMouseActions --");
 		
@@ -680,11 +681,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleKeyboardActions(WebDriver driver) {
-		test = extent.createTest("Test Case 14","Handle keyboard key press and key combination.");
+		test = extent.createTest("Test Case 14 Keyboard","Handle keyboard key press and key combination.");
 		test.log(Status.INFO,"-- HandleKeyboardActions --");														
 		logger.info("-- HandleKeyboardActions --");
 		
@@ -716,11 +717,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleUploadFiles(WebDriver driver) {
-		test = extent.createTest("Test Case 15","Handle uploading of file.");
+		test = extent.createTest("Test Case 15 File","Handle uploading of file.");
 		test.log(Status.INFO,"-- HandleUploadFiles --");																
 		logger.info("-- HandleUploadFiles --");
 		
@@ -757,11 +758,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandlePagesWindows(WebDriver driver) {
-		test = extent.createTest("Test Case 16","Handle creation of new tab or window.");
+		test = extent.createTest("Test Case 16 Tabs","Handle creation of new tab or window.");
 		test.log(Status.INFO,"-- HandlePagesWindows --");																		
 		logger.info("-- HandlePagesWindows --");
 		
@@ -800,11 +801,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleMultiplePagesWindows(WebDriver driver) {
-		test = extent.createTest("Test Case 17","Handle opening and switching to tab or window.");
+		test = extent.createTest("Test Case 17 Windows","Handle opening and switching to tab or window.");
 		test.log(Status.INFO,"-- HandleMultiplePagesWindows --");																				
 		logger.info("-- HandleMultiplePagesWindows --");
 		
@@ -867,11 +868,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleCaptureScreen(WebDriver driver) {
-		test = extent.createTest("Test Case 18","Handle screenshot of window or an element.");
+		test = extent.createTest("Test Case 18 Screenshot","Handle screenshot of window or an element.");
 		test.log(Status.INFO,"-- HandleCaptureScreen --");																						
 		logger.info("-- HandleCaptureScreen --");
 		
@@ -926,11 +927,11 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void HandleUsingClass(WebDriver driver) {
-		test = extent.createTest("Test Case 19","Demonstration of class inheritance.");
+		test = extent.createTest("Test Case 19 Classes","Demonstration of class inheritance.");
 		test.log(Status.INFO,"-- HandleUsingClass --");																								
 		logger.info("-- HandleUsingClass --");
 		
@@ -948,7 +949,7 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param inMilliSeconds the amount of time the process will hold until next line
 	 */
 	public void Threadsleep(int inMilliSeconds) {
@@ -961,7 +962,7 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param productname retrieved from the website, use the table and click product
 	 */
 	public void SelectProduct(String productname) {
@@ -971,16 +972,17 @@ public class JavaSelenium {
 	
 	/**
 	 * 
-	 * DEFINITION: 
+	 * Definition: 
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public void CloseAndQuitBrowser(WebDriver driver) {
-		test = extent.createTest("Test Case 20","Close browser and end automation session.");
+		test = extent.createTest("Test Case 20 End","Close browser and end automation session.");
 		test.log(Status.INFO,"-- CloseAndQuitBrowser --");																								
 		logger.info("-- CloseAndQuitBrowser --");
 		
 		try {
 			Thread.sleep(3000);
+			driver.close();
 			driver.quit();
 			
 			extent.flush();
@@ -1029,7 +1031,7 @@ public class JavaSelenium {
 
 /**
  * 
- * DEFINITION: 
+ * Definition: 
  * 
  */
 class MyClass {

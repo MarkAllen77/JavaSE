@@ -11,7 +11,7 @@ import SourcePages.TimersPage;
 
 /**
  * 
- * DEFINITION:
+ * Definition:
  * @author markallen77
  * @version 20240325 
  * 
@@ -22,6 +22,12 @@ public class JavaTestNG {
 
 	static WebDriver driver;
 	
+	/**
+	 * 
+	 * Definition: 
+	 * @param browserName generated from TestNG pom.xml
+	 * 
+	 */
 	@Parameters("browserName")
 	@BeforeTest
 	public void Setup(String browserName) {		
@@ -30,11 +36,21 @@ public class JavaTestNG {
 		driver = JavaSeleniumInstance.InitializeDriver(browserName);
 	}
 	
+	/**
+	 * 
+	 * Definition: 
+	 * 
+	 */
 	@Test
 	public void TestCase() {
 		JavaSeleniumInstance.HandleUsingClass(driver);
 	}
 	
+	/**
+	 * 
+	 * Definition: 
+	 * 
+	 */
 	@AfterTest
 	public void TearDown() {
 		JavaSeleniumInstance.CloseAndQuitBrowser(driver);

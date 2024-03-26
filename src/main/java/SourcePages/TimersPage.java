@@ -12,7 +12,7 @@ import JavaMain.JavaSelenium;
 
 /**
  * 
- * DEFINITION:
+ * Definition:
  * @author markallen77
  * @version 20240325 
  * 
@@ -22,7 +22,7 @@ public class TimersPage {
 	
 	/**
 	 * 
-	 * DEFINITION:
+	 * Definition:
 	 * 
 	 */
 	public void TimersPageStart() {
@@ -34,7 +34,7 @@ public class TimersPage {
 	
 	/**
 	 * 
-	 * DEFINITION:
+	 * Definition:
 	 * 
 	 */
 	public void TimersPageStop() {

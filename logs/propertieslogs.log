@@ -845,3 +845,36 @@
 [INFO ] 2024-03-25 12:50:37.311 [main] JavaSelenium: -- CloseAndQuitBrowser --
 [INFO ] 2024-03-25 12:50:41.289 [main] JavaSelenium: Thread: 1
 [INFO ] 2024-03-25 12:50:41.291 [main] JavaSelenium: Time Elapsed: 00 hours, 02 mins, 29 seconds, 916 ms
+[INFO ] 2024-03-26 08:41:29.450 [main] JavaSelenium: Start Execution: 2024/03/26 08:41:28
+[INFO ] 2024-03-26 08:41:29.776 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-26 08:41:31.915 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-26 08:41:31.922 [main] JavaSelenium: -- HandleInputandRadio --
+[INFO ] 2024-03-26 08:41:37.609 [main] JavaSelenium: true
+[INFO ] 2024-03-26 08:41:37.644 [main] JavaSelenium: true
+[INFO ] 2024-03-26 08:41:37.661 [main] JavaSelenium: Current value: 
+[INFO ] 2024-03-26 08:41:37.917 [main] JavaSelenium: Updated value: John
+[INFO ] 2024-03-26 08:41:38.044 [main] JavaSelenium: Radiobutton false
+[INFO ] 2024-03-26 08:41:51.612 [main] JavaSelenium: Start Execution: 2024/03/26 08:41:50
+[INFO ] 2024-03-26 08:41:51.936 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-26 08:41:54.060 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-26 08:41:54.070 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-26 08:41:54.073 [main] JavaSelenium: 55
+[INFO ] 2024-03-26 08:41:54.073 [main] JavaSelenium: 0
+[INFO ] 2024-03-26 08:41:54.073 [main] JavaSelenium: 1
+[INFO ] 2024-03-26 08:41:54.074 [main] JavaSelenium: 2
+[INFO ] 2024-03-26 08:41:54.074 [main] JavaSelenium: 3
+[INFO ] 2024-03-26 08:41:54.074 [main] JavaSelenium: 4
+[INFO ] 2024-03-26 08:42:00.944 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-03-26 08:42:04.678 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-03-26 08:42:04.679 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 13 seconds, 975 ms
+[INFO ] 2024-03-26 08:42:29.174 [main] JavaSelenium: Start Execution: 2024/03/26 08:42:28
+[INFO ] 2024-03-26 08:42:29.484 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-03-26 08:42:31.649 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-03-26 08:42:31.656 [main] JavaSelenium: -- HandleUsingClass --
+[INFO ] 2024-03-26 08:42:31.658 [main] JavaSelenium: 55
+[INFO ] 2024-03-26 08:42:31.659 [main] JavaSelenium: 0
+[INFO ] 2024-03-26 08:42:31.659 [main] JavaSelenium: 1
+[INFO ] 2024-03-26 08:42:31.659 [main] JavaSelenium: 2
+[INFO ] 2024-03-26 08:42:31.659 [main] JavaSelenium: 3
+[INFO ] 2024-03-26 08:42:31.659 [main] JavaSelenium: 4
+[INFO ] 2024-03-26 08:42:38.216 [main] JavaSelenium: -- CloseAndQuitBrowser --

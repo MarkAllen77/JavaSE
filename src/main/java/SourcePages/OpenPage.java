@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 /**
  * 
- * DEFINITION:
+ * Definition:
  * @author markallen77
  * @version 20240325 
  * 
@@ -18,7 +18,7 @@ public class OpenPage {
 	
 	/**
 	 * 
-	 * DEFINITION:
+	 * Definition:
 	 * @param driver selenium webdriver for specific web browser
 	 */
 	public OpenPage(WebDriver driver) {
@@ -28,7 +28,7 @@ public class OpenPage {
 	
 	/**
 	 * 
-	 * DEFINITION:
+	 * Definition:
 	 * @param url submitted url for interaction
 	 */
 	public void openPage(String url) {
@@ -37,7 +37,7 @@ public class OpenPage {
 	
 	/**
 	 * 
-	 * DEFINITION:
+	 * Definition:
 	 * @param searchKeyword submitted variable for browser search
 	 */
 	public void enterSearchInput(String searchKeyword) {
@@ -54,7 +54,7 @@ public class OpenPage {
 	
 	/**
 	 * 
-	 * DEFINITION:
+	 * Definition:
 	 * @param inMilliSeconds the amount of time the process will hold until next line
 	 */
 	public void Threadsleep(int inMilliSeconds) {
