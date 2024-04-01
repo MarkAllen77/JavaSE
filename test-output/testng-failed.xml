@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestChrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="JavaTest.JavaTestNG">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TestCase19"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- JavaTest.JavaTestNG -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+  <test thread-count="2" parallel="tests" name="TestMSEdge(failed)">
     <parameter name="browserName" value="MSEdge"/>
     <classes>
       <class name="JavaTest.JavaTestNG">
         <methods>
           <include name="TearDown"/>
-          <include name="TestCase"/>
+          <include name="TestCase17"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- JavaTest.JavaTestNG -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestMSEdge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

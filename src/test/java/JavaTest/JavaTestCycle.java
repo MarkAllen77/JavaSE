@@ -38,22 +38,22 @@ public class JavaTestCycle {
 				
 		driver = JavaSeleniumInstance.InitializeDriver("Chrome");
 	    
-//		JavaSeleniumInstance.HandleInputandRadio(driver);
-//		JavaSeleniumInstance.HandleDropdown(driver);
-//		JavaSeleniumInstance.HandleMultiDropdown(driver);
-//		JavaSeleniumInstance.HandleBootstrapDropdown(driver);
-//		JavaSeleniumInstance.HandleAutoSuggestion(driver);
-//		JavaSeleniumInstance.HandleHiddenItems(driver);
-//		JavaSeleniumInstance.HandleDialogAlerts(driver);
-//		JavaSeleniumInstance.HandleFramesiFrames(driver);
-//		JavaSeleniumInstance.HandleWebTablePagination(driver);
-//		JavaSeleniumInstance.HandleDatePickers(driver);
-//		JavaSeleniumInstance.HandleMouseActions(driver);
-//		JavaSeleniumInstance.HandleKeyboardActions(driver);
-//		JavaSeleniumInstance.HandleUploadFiles(driver);
-//		JavaSeleniumInstance.HandlePagesWindows(driver);
-//		JavaSeleniumInstance.HandleMultiplePagesWindows(driver);
-//		JavaSeleniumInstance.HandleCaptureScreen(driver);
+		JavaSeleniumInstance.HandleInputandRadio(driver);
+		JavaSeleniumInstance.HandleDropdown(driver);
+		JavaSeleniumInstance.HandleMultiDropdown(driver);
+		JavaSeleniumInstance.HandleBootstrapDropdown(driver);
+		JavaSeleniumInstance.HandleAutoSuggestion(driver);
+		JavaSeleniumInstance.HandleHiddenItems(driver);
+		JavaSeleniumInstance.HandleDialogAlerts(driver);
+		JavaSeleniumInstance.HandleFramesiFrames(driver);
+		JavaSeleniumInstance.HandleWebTablePagination(driver);
+		JavaSeleniumInstance.HandleDatePickers(driver);
+		JavaSeleniumInstance.HandleMouseActions(driver);
+		JavaSeleniumInstance.HandleKeyboardActions(driver);
+		JavaSeleniumInstance.HandleUploadFiles(driver);
+		JavaSeleniumInstance.HandlePagesWindows(driver);
+		JavaSeleniumInstance.HandleMultiplePagesWindows(driver);
+		JavaSeleniumInstance.HandleCaptureScreen(driver);
 		JavaSeleniumInstance.HandleUsingClass(driver);
 	    
 		JavaSeleniumInstance.CloseAndQuitBrowser(driver);

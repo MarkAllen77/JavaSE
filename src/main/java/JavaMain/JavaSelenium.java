@@ -982,7 +982,6 @@ public class JavaSelenium {
 		
 		try {
 			Thread.sleep(3000);
-			driver.close();
 			driver.quit();
 			
 			extent.flush();

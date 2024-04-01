@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="JavaTest.JavaTestNG" class="method navigator-link" hash-for-method="TestCase">TestCase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="JavaTest.JavaTestNG" class="method navigator-link" hash-for-method="TestCase17">TestCase17</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="JavaTest.JavaTestNG" class="method navigator-link" hash-for-method="TestCase">TestCase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="JavaTest.JavaTestNG" class="method navigator-link" hash-for-method="TestCase17">TestCase17</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="JavaTest.JavaTestNG" class="method navigator-link" hash-for-method="TestCase19">TestCase19</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="JavaTest.JavaTestNG" class="method navigator-link" hash-for-method="TestCase19">TestCase19</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,16 +141,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCase">
-                  </a> <!-- TestCase -->
-                  <span class="method-name">TestCase</span>
+                  <a name="TestCase17">
+                  </a> <!-- TestCase17 -->
+                  <span class="method-name">TestCase17</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCase">
-                  </a> <!-- TestCase -->
-                  <span class="method-name">TestCase</span>
+                  <a name="TestCase17">
+                  </a> <!-- TestCase17 -->
+                  <span class="method-name">TestCase17</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase19">
+                  </a> <!-- TestCase19 -->
+                  <span class="method-name">TestCase19</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCase19">
+                  </a> <!-- TestCase19 -->
+                  <span class="method-name">TestCase19</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,14 +178,14 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestChrome&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestBrowsers&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;JavaTest.JavaTestNG&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestChrome --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestMSEdge&quot;&gt;
+  &lt;/test&gt; &lt;!-- TestBrowsers --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestMSEdge&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;MSEdge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;JavaTest.JavaTestNG&quot;/&gt;
@@ -178,7 +202,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestChrome (1 class)</span>
+                <span class="test-name">TestBrowsers (1 class)</span>
               </li>
               <li>
                 <span class="test-name">TestMSEdge (1 class)</span>
@@ -207,20 +231,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestCase')
+data.setCell(0, 1, 'TestCase17')
 data.setCell(0, 2, 'JavaTest.JavaTestNG')
-data.setCell(0, 3, 7585);
+data.setCell(0, 3, 14844);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestCase')
+data.setCell(1, 1, 'TestCase17')
 data.setCell(1, 2, 'JavaTest.JavaTestNG')
-data.setCell(1, 3, 7476);
+data.setCell(1, 3, 14679);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestCase19')
+data.setCell(2, 2, 'JavaTest.JavaTestNG')
+data.setCell(2, 3, 6593);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestCase19')
+data.setCell(3, 2, 'JavaTest.JavaTestNG')
+data.setCell(3, 3, 6371);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -251,25 +283,33 @@ return data;
                 <span class="method-name">Setup(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TestCase17</span>
+                <span class="method-start">2418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestCase19</span>
+                <span class="method-start">17103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">23479 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">Setup(MSEdge)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">27305 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">TestCase</span>
-                <span class="method-start">2458 ms</span>
+                <span class="method-name">TestCase17</span>
+                <span class="method-start">28722 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TestCase</span>
-                <span class="method-start">3941 ms</span>
+                <span class="method-name">TestCase19</span>
+                <span class="method-start">43570 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">10052 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
-                <span class="method-name">TearDown</span>
-                <span class="method-start">11418 ms</span>
+                <span class="method-start">50165 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

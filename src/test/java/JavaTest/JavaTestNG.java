@@ -35,6 +35,16 @@ public class JavaTestNG {
 				
 		driver = JavaSeleniumInstance.InitializeDriver(browserName);
 	}
+
+	/**
+	 * 
+	 * Definition: 
+	 * 
+	 */
+	@Test
+	public void TestCase17() {
+		JavaSeleniumInstance.HandleMultiplePagesWindows(driver);
+	}
 	
 	/**
 	 * 
@@ -42,7 +52,7 @@ public class JavaTestNG {
 	 * 
 	 */
 	@Test
-	public void TestCase() {
+	public void TestCase19() {
 		JavaSeleniumInstance.HandleUsingClass(driver);
 	}
 	

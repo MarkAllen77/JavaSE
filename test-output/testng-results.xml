@@ -1,36 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T12:22:01 CST" name="Suite" finished-at="2024-03-25T12:22:16 CST" duration-ms="15023">
+  <suite started-at="2024-04-01T11:58:27 CST" name="Suite" finished-at="2024-04-01T11:59:22 CST" duration-ms="54718">
     <groups>
     </groups>
-    <test started-at="2024-03-25T12:22:01 CST" name="TestMSEdge" finished-at="2024-03-25T12:22:16 CST" duration-ms="15023">
+    <test started-at="2024-04-01T11:58:27 CST" name="TestBrowsers" finished-at="2024-04-01T11:58:54 CST" duration-ms="27287">
       <class name="JavaTest.JavaTestNG">
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:JavaTest.JavaTestNG@26bab2f1]" started-at="2024-03-25T12:22:01 CST" name="Setup" finished-at="2024-03-25T12:22:04 CST" duration-ms="3939" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[MSEdge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="TestCase()[pri:0, instance:JavaTest.JavaTestNG@26bab2f1]" started-at="2024-03-25T12:22:04 CST" name="TestCase" finished-at="2024-03-25T12:22:12 CST" duration-ms="7476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:JavaTest.JavaTestNG@26bab2f1]" started-at="2024-03-25T12:22:12 CST" name="TearDown" finished-at="2024-03-25T12:22:16 CST" duration-ms="3591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- JavaTest.JavaTestNG -->
-    </test> <!-- TestMSEdge -->
-    <test started-at="2024-03-25T12:22:01 CST" name="TestChrome" finished-at="2024-03-25T12:22:16 CST" duration-ms="15023">
-      <class name="JavaTest.JavaTestNG">
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:JavaTest.JavaTestNG@2d1dee39]" started-at="2024-03-25T12:22:01 CST" name="Setup" finished-at="2024-03-25T12:22:03 CST" duration-ms="2420" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:JavaTest.JavaTestNG@48d5f34e]" started-at="2024-04-01T11:58:27 CST" name="Setup" finished-at="2024-04-01T11:58:30 CST" duration-ms="2386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +18,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="TestCase()[pri:0, instance:JavaTest.JavaTestNG@2d1dee39]" started-at="2024-03-25T12:22:03 CST" name="TestCase" finished-at="2024-03-25T12:22:11 CST" duration-ms="7585" status="PASS">
+        <test-method signature="TestCase17()[pri:0, instance:JavaTest.JavaTestNG@48d5f34e]" started-at="2024-04-01T11:58:30 CST" name="TestCase17" finished-at="2024-04-01T11:58:44 CST" duration-ms="14679" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:JavaTest.JavaTestNG@2d1dee39]" started-at="2024-03-25T12:22:11 CST" name="TearDown" finished-at="2024-03-25T12:22:16 CST" duration-ms="4958" status="PASS">
+        </test-method> <!-- TestCase17 -->
+        <test-method signature="TestCase19()[pri:0, instance:JavaTest.JavaTestNG@48d5f34e]" started-at="2024-04-01T11:58:44 CST" name="TestCase19" finished-at="2024-04-01T11:58:51 CST" duration-ms="6371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase19 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:JavaTest.JavaTestNG@48d5f34e]" started-at="2024-04-01T11:58:51 CST" name="TearDown" finished-at="2024-04-01T11:58:54 CST" duration-ms="3792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- JavaTest.JavaTestNG -->
-    </test> <!-- TestChrome -->
+    </test> <!-- TestBrowsers -->
+    <test started-at="2024-04-01T11:58:54 CST" name="TestMSEdge" finished-at="2024-04-01T11:59:22 CST" duration-ms="27400">
+      <class name="JavaTest.JavaTestNG">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:JavaTest.JavaTestNG@37052337]" started-at="2024-04-01T11:58:54 CST" name="Setup" finished-at="2024-04-01T11:58:56 CST" duration-ms="1406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MSEdge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="TestCase17()[pri:0, instance:JavaTest.JavaTestNG@37052337]" started-at="2024-04-01T11:58:56 CST" name="TestCase17" finished-at="2024-04-01T11:59:11 CST" duration-ms="14844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase17 -->
+        <test-method signature="TestCase19()[pri:0, instance:JavaTest.JavaTestNG@37052337]" started-at="2024-04-01T11:59:11 CST" name="TestCase19" finished-at="2024-04-01T11:59:17 CST" duration-ms="6593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase19 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:JavaTest.JavaTestNG@37052337]" started-at="2024-04-01T11:59:17 CST" name="TearDown" finished-at="2024-04-01T11:59:22 CST" duration-ms="4537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- JavaTest.JavaTestNG -->
+    </test> <!-- TestMSEdge -->
   </suite> <!-- Suite -->
 </testng-results>
