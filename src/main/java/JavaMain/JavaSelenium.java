@@ -125,6 +125,7 @@ public class JavaSelenium {
 					
 				    driver = new ChromeDriver(options);
 				    logger.info("Using Chrome browser");
+				    test.log(Status.INFO,"Using Chrome browser");
 
 					break;
 				case "MSEdge" :
@@ -137,6 +138,8 @@ public class JavaSelenium {
 					
 				    driver = new EdgeDriver(optionsE);
 				    logger.info("Using MSEdge browser");
+				    test.log(Status.INFO,"Using MSEdge browser");
+				    
 					break;
 				case "FireFox" :
 					System.setProperty("webdriver.gecko.driver", prop.getProperty("GeckoDriver"));
@@ -148,6 +151,8 @@ public class JavaSelenium {
 					
 				    driver = new FirefoxDriver(optionsF);
 				    logger.info("Using FireFox browser");
+				    test.log(Status.INFO,"Using Firefox browser");
+				    
 					break;
 				default :
 					break;					
@@ -943,8 +948,43 @@ public class JavaSelenium {
 	    //class from external file
 	    OpenPage classGoogleInstancePage = new OpenPage(driver);
 	    classGoogleInstancePage.openPage("https://www.google.com");
-	    classGoogleInstancePage.enterSearchInput("java selenium");
+	    classGoogleInstancePage.enterSearchInput("dictionary");    
 	    Threadsleep(2000);
+
+		test.log(Status.INFO,"-- LinkText and PartialLinkText --");																								
+		logger.info("-- LinkAndPartial --");
+
+	    WebElement dictionaryDefinitionElement = driver.findElement(By.linkText("DICTIONARY Definition"));
+	    dictionaryDefinitionElement.click();
+	    
+	    WebElement partialLink = driver.findElement(By.partialLinkText("synonyms"));
+	    partialLink.click();
+	}
+	
+	/**
+	 * 
+	 * Definition: 
+	 * @param driver selenium webdriver for specific web browser
+	 */
+	public void HandleTestDriven(WebDriver driver, String Name, String Email, String Phone, String Address) {
+		test = extent.createTest("Test Case 19.1 DataProvider","Using TestNG Data Provider annotation.");
+		test.log(Status.INFO,"-- HandleTestDriven --");																								
+		logger.info("-- HandleTestDriven --");
+		
+		String url = "https://testautomationpractice.blogspot.com/";
+	    driver.get(url);
+
+	    WebElement nameInput = driver.findElement(By.xpath("//input[@id='name']"));
+	    WebElement emailInput = driver.findElement(By.xpath("//input[@id='email']"));
+	    WebElement phoneInput = driver.findElement(By.xpath("//input[@id='phone']"));
+	    WebElement addressTextarea = driver.findElement(By.xpath("//textarea[@id='textarea']"));
+	    
+	    nameInput.sendKeys(Name);
+	    emailInput.sendKeys(Email);
+	    phoneInput.sendKeys(Phone);
+	    addressTextarea.sendKeys(Address);
+	    
+	    test.log(Status.INFO,"DATA: " + Name + ", " + Email+ ", " + Phone+ ", " + Address);
 	}
 	
 	/**

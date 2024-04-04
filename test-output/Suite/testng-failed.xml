@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="TestChrome(failed)">
-    <parameter name="browserName" value="Chrome"/>
-    <classes>
-      <class name="JavaTest.JavaTestNG">
-        <methods>
-          <include name="TearDown"/>
-          <include name="TestCase19"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- JavaTest.JavaTestNG -->
-    </classes>
-  </test> <!-- TestChrome(failed) -->
-  <test thread-count="2" parallel="tests" name="TestMSEdge(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestMSEdge(failed)">
     <parameter name="browserName" value="MSEdge"/>
     <classes>
       <class name="JavaTest.JavaTestNG">
         <methods>
           <include name="TearDown"/>
-          <include name="TestCase17"/>
+          <include name="TestCase191" invocation-numbers="0 1"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- JavaTest.JavaTestNG -->
     </classes>
   </test> <!-- TestMSEdge(failed) -->
+  <test thread-count="5" name="TestChrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="JavaTest.JavaTestNG">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TestCase191" invocation-numbers="0 1"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- JavaTest.JavaTestNG -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
