@@ -35,35 +35,35 @@
     <th>Description</th>
   </tr>
   <tr>
-    <td>JavaSelenium.java</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/src/main/java/JavaMain/JavaSelenium.java">JavaSelenium.java</a></td>
     <td></td>
   </tr>
   <tr>
-    <td>JavaTestCycle.java</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/src/test/java/JavaTest/JavaTestCycle.java">JavaTestCycle.java</a></td>
     <td></td>
   </tr>
   <tr>
-    <td>JavaTestNG.java</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/src/test/java/JavaTest/JavaTestNG.java">JavaTestNG.java</a></td>
     <td></td>
   </tr>  
   <tr>
-    <td>OpenPage.java</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/src/main/java/SourcePages/OpenPage.java">OpenPage.java</a></td>
     <td></td>
   </tr>
     <tr>
-    <td>TimersPage.java</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/src/main/java/SourcePages/TimersPage.java">TimersPage.java</a></td>
     <td></td>
   </tr>
   <tr>
-    <td>config.property</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/Config/config.property">config.property</a></td>
     <td></td>
   </tr>
   <tr>
-    <td>log4j2.properties</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/src/main/resources/log4j2.properties">log4j2.properties</a></td>
     <td></td>
   </tr>
   <tr>
-    <td>propertieslogs.log</td>
+    <td><a href="https://github.com/MarkAllen77/JavaSE/blob/master/logs/propertieslogs.log">propertieslogs.log</a></td>
     <td></td>
   </tr>  
 </table>
