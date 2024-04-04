@@ -10,6 +10,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
@@ -18,6 +19,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -86,7 +88,8 @@ public class JavaSelenium {
 		try {
 		    //------------------- Extent Report ------------------------------
 			//ExtentHtmlReporter and specified the file path for the Extent Report
-			htmlReporter =  new ExtentSparkReporter("./Reports/extentReport.html");
+			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+			htmlReporter =  new ExtentSparkReporter("./Reports/extentReport"+"_"+browserName+"_"+timeStamp+".html");
 			//initialize extentreports
 			extent = new ExtentReports();
 			extent.attachReporter(htmlReporter);

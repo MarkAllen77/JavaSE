@@ -2161,3 +2161,35 @@
 [INFO ] 2024-04-04 11:07:19.885 [main] JavaSelenium: -- CloseAndQuitBrowser --
 [INFO ] 2024-04-04 11:07:23.204 [main] JavaSelenium: Thread: 1
 [INFO ] 2024-04-04 11:07:23.204 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 13 seconds, 393 ms
+[INFO ] 2024-04-04 11:33:41.952 [main] JavaSelenium: Start Execution: 2024/04/04 11:33:41
+[INFO ] 2024-04-04 11:33:42.247 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-04-04 11:33:44.337 [main] JavaSelenium: Using MSEdge browser
+[INFO ] 2024-04-04 11:33:44.407 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:33:50.908 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:33:53.623 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-04-04 11:33:58.468 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-04-04 11:33:58.470 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 16 seconds, 531 ms
+[INFO ] 2024-04-04 11:33:58.496 [main] JavaSelenium: Start Execution: 2024/04/04 11:33:58
+[INFO ] 2024-04-04 11:33:58.497 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-04-04 11:33:59.761 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-04-04 11:33:59.779 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:34:04.290 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:34:06.960 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-04-04 11:34:10.294 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-04-04 11:34:10.294 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 11 seconds, 798 ms
+[INFO ] 2024-04-04 11:37:33.412 [main] JavaSelenium: Start Execution: 2024/04/04 11:37:33
+[INFO ] 2024-04-04 11:37:33.711 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-04-04 11:37:35.777 [main] JavaSelenium: Using MSEdge browser
+[INFO ] 2024-04-04 11:37:35.836 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:37:42.380 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:37:45.072 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-04-04 11:37:49.976 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-04-04 11:37:49.977 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 16 seconds, 580 ms
+[INFO ] 2024-04-04 11:37:50.003 [main] JavaSelenium: Start Execution: 2024/04/04 11:37:50
+[INFO ] 2024-04-04 11:37:50.005 [main] JavaSelenium: C:\Users\archie\eclipse-workspace\JavaSE
+[INFO ] 2024-04-04 11:37:51.303 [main] JavaSelenium: Using Chrome browser
+[INFO ] 2024-04-04 11:37:51.322 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:37:57.117 [main] JavaSelenium: -- HandleTestDriven --
+[INFO ] 2024-04-04 11:37:59.778 [main] JavaSelenium: -- CloseAndQuitBrowser --
+[INFO ] 2024-04-04 11:38:03.119 [main] JavaSelenium: Thread: 1
+[INFO ] 2024-04-04 11:38:03.120 [main] JavaSelenium: Time Elapsed: 00 hours, 00 mins, 13 seconds, 116 ms
